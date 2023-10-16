@@ -10,9 +10,11 @@ import (
 
 func main() {
 	model.RunProgress()
-	access := model.RunPager()
+	access := model.RunTerms()
 
 	if access {
 		fmt.Println("Hello World!")
+	} else {
+		return
 	}
 }
