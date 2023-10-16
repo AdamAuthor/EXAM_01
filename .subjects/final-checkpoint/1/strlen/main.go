@@ -1,7 +1,7 @@
 package main
 
 import (
-	student "academie/piscine"
+	"academie/student"
 
 	"github.com/01-edu/go-tests/lib/challenge"
 	"github.com/01-edu/go-tests/lib/chars"
