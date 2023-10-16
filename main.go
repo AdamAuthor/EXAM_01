@@ -8,7 +8,6 @@ import (
 	_ "github.com/01-edu/go-tests/lib/challenge"
 	_ "github.com/01-edu/z01"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/inancgumus/screen"
 )
 
 func main() {
@@ -18,6 +17,5 @@ func main() {
 		fmt.Println("Oh no!", err)
 		os.Exit(1)
 	}
-	screen.Clear()
-
+	model.Clear()
 }
