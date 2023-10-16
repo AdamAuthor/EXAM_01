@@ -1,3 +1,7 @@
+github.com/01-edu/go-tests v0.0.0-20230817164458-748999cc7f33 h1:jXyfBPzDecd6/G0fQWhL7Owkm/5kCIbo/VJrcQLH5VY=
+github.com/01-edu/go-tests v0.0.0-20230817164458-748999cc7f33/go.mod h1:IYzuZWohzjAyod6PZ/oOxLeUFhf9yb361OVWWUqSgyM=
+github.com/01-edu/z01 v0.1.0 h1:Rr1p92CKYXUgVFw872iGDABXpdkuKf2jmS+KV6r1034=
+github.com/01-edu/z01 v0.1.0/go.mod h1:BH7t35JaNFuP83rTJDc5nkSfgmC/HYVcJsUcdFqYZNo=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=
 github.com/aymanbagabas/go-osc52/v2 v2.0.1/go.mod h1:uYgXzlJ7ZpABp8OJ+exZzJJhRNQ2ASbcXHWsFqH8hp8=
 github.com/charmbracelet/bubbletea v0.24.2 h1:uaQIKx9Ai6Gdh5zpTbGiWpytMU+CfsPp06RaW2cx/SY=

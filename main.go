@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	_ "github.com/01-edu/go-tests/lib/challenge"
+	_ "github.com/01-edu/z01"
 	tea "github.com/charmbracelet/bubbletea"
 )
 
