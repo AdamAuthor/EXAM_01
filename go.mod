@@ -1,23 +1,26 @@
 module academie
 
-go 1.21.1
+go 1.21.3
 
 require (
 	github.com/01-edu/go-tests v0.0.0-20230817164458-748999cc7f33
 	github.com/01-edu/z01 v0.1.0
 	github.com/charmbracelet/bubbletea v0.24.2
+	github.com/inancgumus/screen v0.0.0-20190314163918-06e984b86ed3
+	student v0.0.0
 )
+
+replace student => ./student
 
 require (
 	github.com/charmbracelet/harmonica v0.2.0 // indirect
-	github.com/inancgumus/screen v0.0.0-20190314163918-06e984b86ed3 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
 )
 
 require (
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/charmbracelet/bubbles v0.16.1
-	github.com/charmbracelet/lipgloss v0.9.1
+	github.com/charmbracelet/lipgloss v0.9.1 // indirect
 	github.com/containerd/console v1.0.4-0.20230313162750-1ae8d489ac81 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.18 // indirect
