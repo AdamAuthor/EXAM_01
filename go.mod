@@ -7,12 +7,10 @@ require (
 	github.com/01-edu/z01 v0.1.0
 	github.com/charmbracelet/bubbletea v0.24.2
 	github.com/inancgumus/screen v0.0.0-20190314163918-06e984b86ed3
-	student v0.0.0
 )
 
-replace student => ./student
-
 require (
+	github.com/buger/goterm v1.0.4 // indirect
 	github.com/charmbracelet/harmonica v0.2.0 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
 )
