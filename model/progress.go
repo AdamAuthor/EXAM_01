@@ -1,6 +1,8 @@
 package model
 
 import (
+	"fmt"
+	"os"
 	"strings"
 	"time"
 
@@ -13,8 +15,18 @@ const (
 	maxWidth = 80
 )
 
-func Progress() Model {
-	m := Model{
+func RunProgress() {
+	bar := Progress()
+
+	if _, err := tea.NewProgram(bar).Run(); err != nil {
+		fmt.Println("Oh no!", err)
+		os.Exit(1)
+	}
+	Clear()
+}
+
+func Progress() progressModel {
+	m := progressModel{
 		progress: progress.New(progress.WithGradient("#FFFFFF", "#B7DDE1")),
 	}
 	return m
@@ -22,15 +34,15 @@ func Progress() Model {
 
 type tickMsg time.Time
 
-type Model struct {
+type progressModel struct {
 	progress progress.Model
 }
 
-func (m Model) Init() tea.Cmd {
+func (m progressModel) Init() tea.Cmd {
 	return tickCmd()
 }
 
-func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+func (m progressModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.KeyMsg:
 		return m, tea.Quit
@@ -63,7 +75,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	}
 }
 
-func (m Model) View() string {
+func (m progressModel) View() string {
 	pad := strings.Repeat(" ", padding)
 	return "\n" + pad + m.progress.View() + "\n\n"
 }

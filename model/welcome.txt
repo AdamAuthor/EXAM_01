@@ -1,0 +1,8 @@
+Use GrademeEXAM responsibly for practice purposes.
+Success comes from understanding the code, there are no shortcuts.
+This tools has been created to help you review your errors and better understand your code issues.
+Be aware that the content of GrademeEXAM may not match the ExamShell of 42, the corrections from the Moulinette can differ significantly, and exam topics can change at any time.
+You are responsible for your exam preparation and results.
+by pressing "Enter" and using Grademe, you accept these terms.
+
+Press any other symbol if you refuse to use this app
