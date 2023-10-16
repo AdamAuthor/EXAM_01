@@ -1,4 +1,4 @@
-package bar
+package model
 
 import (
 	"strings"
