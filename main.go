@@ -1,7 +1,7 @@
 package main
 
 import (
-	"academie/model"
+	bar "academie/model"
 	"fmt"
 	"os"
 
@@ -11,9 +11,9 @@ import (
 )
 
 func main() {
-	p := tea.NewProgram(model.InitialModel())
-	if _, err := p.Run(); err != nil {
-		fmt.Printf("Alas, there's been an error: %v", err)
+	bar := bar.Progress()
+	if _, err := tea.NewProgram(bar).Run(); err != nil {
+		fmt.Println("Oh no!", err)
 		os.Exit(1)
 	}
 }
