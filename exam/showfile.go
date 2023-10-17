@@ -19,6 +19,7 @@ import (
 )
 
 var access = false
+var exit = false
 
 var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
 
@@ -64,6 +65,7 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c", "esc":
+			exit = true
 			return e, tea.Quit
 		case "enter":
 			access = true
@@ -87,6 +89,12 @@ func (e example) helpView() string {
 }
 
 func InitTask(idxCheckpoint, level int, curTask string) int {
+	if exit {
+		model.Clear()
+		model.Clear()
+		model.Clear()
+		os.Exit(0)
+	}
 	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level, curTask)
 	bModel, err := createGlamour(content)
 	if err != nil {
@@ -102,8 +110,12 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 
 	if checker {
 		model.Clear()
+		model.Clear()
+		model.Clear()
 		return InitTask(idxCheckpoint, level, "")
 	}
+	model.Clear()
+	model.Clear()
+	model.Clear()
 	return InitTask(idxCheckpoint, level, task)
-
 }

@@ -23,6 +23,7 @@ func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	var randomTask string
 	tasks := make(map[int][]string)
 	tasks[1] = []string{"countdown", "strlen"}
+	tasks[2] = []string{"firstrune", "lastrune", "rot13"}
 
 	switch idxCheck {
 	case 1:
