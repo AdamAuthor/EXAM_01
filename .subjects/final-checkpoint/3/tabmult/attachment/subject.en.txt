@@ -1,5 +1,5 @@
-Assignment name  : chunk
-Expected files   : chunk.go
+Assignment name  : tabmult
+Expected files   : main.go
 Allowed imports  : "github.com/01-edu/z01.PrintRune" , "os.*" , "strconv.Atoi"
 --------------------------------------------------------------------------------
 ## tabmult
