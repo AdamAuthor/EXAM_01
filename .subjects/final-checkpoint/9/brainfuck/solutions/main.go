@@ -12,62 +12,54 @@ import (
 	"os"
 )
 
-const SIZE = 2048
+func brainfuck(str string) {
+	var ptr [2048]byte
+	var tapePtr int
 
-func main() {
-	if len(os.Args) != 2 {
-		return
-	}
-	progpoint := []byte(os.Args[1])
-	var arby [SIZE]byte
-	pos := 0
-	openBr := 0         // opened brackets
-	i := 0              // iterates through the source code passed in the argument
-	N := len(progpoint) // length of the source code
-	for i >= 0 && i < N {
-		switch progpoint[i] {
+	for i := 0; i < len(str); i++ {
+		switch str[i] {
 		case '>':
-			// Increment the pointer
-			pos++
+			tapePtr++
 		case '<':
-			// decrement the pointes
-			pos--
+			tapePtr--
 		case '+':
-			// increment the pointed byte
-			arby[pos]++
+			ptr[tapePtr]++
 		case '-':
-			// decrement the pointed byte
-			arby[pos]--
-		case '.':
-			// print the pointed byte on std output
-			fmt.Printf("%c", rune(arby[pos]))
+			ptr[tapePtr]--
 		case '[':
-			// go to the matching ']' if the pointed byte is 0 (while start)
-			openBr = 0
-			if arby[pos] == 0 {
-				for i < N && (progpoint[i] != byte(']') || openBr > 1) {
-					if progpoint[i] == byte('[') {
-						openBr++
-					} else if progpoint[i] == byte(']') {
-						openBr--
-					}
+			if ptr[tapePtr] == 0 {
+				loopDepth := 1
+				for loopDepth > 0 {
 					i++
+					if str[i] == '[' {
+						loopDepth++
+					} else if str[i] == ']' {
+						loopDepth--
+					}
 				}
 			}
 		case ']':
-			// go to the matching '[' if the pointed byte is not 0 (while end)
-			openBr = 0
-			if arby[pos] != 0 {
-				for i >= 0 && (progpoint[i] != byte('[') || openBr > 1) {
-					if progpoint[i] == byte(']') {
-						openBr++
-					} else if progpoint[i] == byte('[') {
-						openBr--
-					}
+			if ptr[tapePtr] != 0 {
+				loopDepth := 1
+				for loopDepth > 0 {
 					i--
+					if str[i] == ']' {
+						loopDepth++
+					} else if str[i] == '[' {
+						loopDepth--
+					}
 				}
+				i-- // Move back to the matching '['
 			}
+		case '.':
+			fmt.Print(string(ptr[tapePtr]))
 		}
-		i++
 	}
+}
+
+func main() {
+	if len(os.Args) == 2 && len(os.Args[1]) > 0 {
+		brainfuck(os.Args[1])
+	}
+	fmt.Println()
 }

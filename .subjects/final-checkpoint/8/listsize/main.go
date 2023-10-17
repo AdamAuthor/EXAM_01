@@ -7,8 +7,18 @@ import (
 	"github.com/01-edu/go-tests/solutions"
 )
 
-func listPushBack(l *student.List, data interface{}) {
-	n := &student.NodeL{Data: data}
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func listPushBack(l *List, data interface{}) {
+	n := &NodeL{Data: data}
 
 	if l.Head == nil {
 		l.Head = n
@@ -26,7 +36,7 @@ func main() {
 
 	for _, arg := range table {
 		link := &solutions.List{}
-		link2 := &student.List{}
+		link2 := &List{}
 		for _, item := range arg.Data {
 			listPushBack(link2, item)
 			solutions.ListPushBack(link, item)
