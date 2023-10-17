@@ -20,7 +20,6 @@ func main() {
 		fmt.Println("0")
 	} else {
 		argument, _ := strconv.Atoi(os.Args[1])
-
 		if argument < 0 {
 			fmt.Println("0")
 		} else {

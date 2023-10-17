@@ -26,7 +26,6 @@ func Program(rootSolutions, exercise string, args ...string) {
 		s := "\n$ "
 		return fmt.Sprintf(s+"go run . %s\n%s$", strings.Join(quotedArgs, " "), out)
 	}
-
 	piscineOut, err := GetPiscineAnswer(exercise, args...)
 	solutionsOut, err1 := GetSolution(rootSolutions, exercise, args...)
 	if err != nil {
@@ -38,7 +37,6 @@ func Program(rootSolutions, exercise string, args ...string) {
 	if err1 != nil {
 		Fatalln("no such file or directory " + err1.Error())
 	}
-	fmt.Println(piscineOut, solutionsOut)
 	if piscineOut != solutionsOut {
 		Fatalln("Your program output is not correct :\n" +
 			console(piscineOut) +
@@ -52,7 +50,7 @@ func GetPiscineAnswer(exercise string, args ...string) (string, error) {
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
 	pathToPiscineMain := filepath.Join(rootDir, "piscine", exercise, "main.go")
-	cmdArgs := append([]string{"run", pathToPiscineMain}, "")
+	cmdArgs := append([]string{"run", pathToPiscineMain}, args...)
 	ex := exec.Command("go", cmdArgs...)
 	piscineOut, err := ex.Output()
 	if err != nil {
@@ -66,7 +64,7 @@ func GetSolution(rootSolutions, exercise string, args ...string) (string, error)
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
 	pathToPiscineMain := filepath.Join(rootDir, rootSolutions, "main.go")
-	cmdArgs := append([]string{"run", pathToPiscineMain}, "")
+	cmdArgs := append([]string{"run", pathToPiscineMain}, args...)
 	ex := exec.Command("go", cmdArgs...)
 	piscineOut, err := ex.Output()
 	if err != nil {
