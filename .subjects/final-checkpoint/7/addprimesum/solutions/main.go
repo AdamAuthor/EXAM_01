@@ -7,11 +7,30 @@
 
 package main
 
-import "github.com/01-edu/z01"
+import (
+	"fmt"
+	"os"
+	"strconv"
+
+	"github.com/01-edu/go-tests/lib/is"
+)
 
 func main() {
-	for i := '9'; i >= '0'; i-- {
-		z01.PrintRune(i)
+	if len(os.Args) != 2 {
+		fmt.Println("0")
+	} else {
+		argument, _ := strconv.Atoi(os.Args[1])
+
+		if argument < 0 {
+			fmt.Println("0")
+		} else {
+			result := 0
+			for ; argument >= 0; argument-- {
+				if is.Prime(argument) {
+					result += argument
+				}
+			}
+			fmt.Println(result)
+		}
 	}
-	z01.PrintRune('\n')
 }

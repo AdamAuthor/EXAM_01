@@ -38,6 +38,7 @@ func Program(rootSolutions, exercise string, args ...string) {
 	if err1 != nil {
 		Fatalln("no such file or directory " + err1.Error())
 	}
+	fmt.Println(piscineOut, solutionsOut)
 	if piscineOut != solutionsOut {
 		Fatalln("Your program output is not correct :\n" +
 			console(piscineOut) +
