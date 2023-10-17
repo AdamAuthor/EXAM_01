@@ -92,8 +92,6 @@ func (e example) helpView() string {
 func InitTask(idxCheckpoint, level int, curTask string) int {
 	if exit {
 		model.Clear()
-		model.Clear()
-		model.Clear()
 		os.Exit(0)
 	}
 	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level, curTask)
@@ -114,6 +112,10 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 		model.Clear()
 		return InitTask(idxCheckpoint, level, task)
 	}
+	if strErr == "" && level == 9 {
+		
+	}
+
 	model.Clear()
 	return InitTask(idxCheckpoint, level, "")
 }

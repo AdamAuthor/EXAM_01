@@ -10,7 +10,6 @@ package exam
 import (
 	"bufio"
 	"errors"
-	"fmt"
 	"io"
 	"math/rand"
 	"os"
@@ -21,30 +20,20 @@ import (
 func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	var selectCheckpoint string
 	var randomTask string
-	tasks := make(map[int][]string)
-	tasks[1] = []string{"countdown", "strlen"}
-	tasks[2] = []string{"firstrune", "lastrune", "lastword", "reduceint", "rot13"}
-	tasks[3] = []string{"alphamirror", "chunk", "tabmult"}
-	tasks[4] = []string{"inter", "ispowerof2", "piglatin", "romannumbers", "swapbits", "union"}
-	tasks[5] = []string{"printhex", "repeatalpha"}
-	tasks[6] = []string{"hiddenp", "revwstr", "rostring", "slice", "split"}
-	tasks[7] = []string{"addprimesum", "atoibase", "fprime", "itoa"}
-	tasks[8] = []string{"brackets", "gcd", "grouping", "listsize", "options", "printmemory", "rpncalc"}
-	tasks[9] = []string{"brainfuck", "itoabase", "listremoveif"}
 
 	switch idxCheck {
 	case 1:
-		fmt.Println(1)
-		return "", "", ""
+		selectCheckpoint = "checkpoint-1"
 	case 2:
-		fmt.Println(2)
-		return "", "", ""
+		selectCheckpoint = "checkpoint-2"
 	case 3:
-		fmt.Println(3)
-		return "", "", ""
+		selectCheckpoint = "checkpoint-3"
 	case 4:
 		selectCheckpoint = "final-checkpoint"
 	}
+
+	tasks := AddTask(selectCheckpoint)
+
 	rand.Seed(time.Now().UnixNano())
 	if task != "" {
 		randomTask = task
