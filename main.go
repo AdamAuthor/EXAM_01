@@ -26,10 +26,7 @@ func main() {
 	} else {
 		return
 	}
-	nameTask, typeCheckpoint, testStart := exam.InitTask(index, level)
-
-	if testStart {
-		exam.RunTester(nameTask, level, typeCheckpoint)
-	}
+	exam.CreateDir()
+	level = exam.InitTask(index, level, "")
 
 }

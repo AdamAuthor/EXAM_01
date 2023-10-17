@@ -17,7 +17,7 @@ import (
 	"time"
 )
 
-func OpenFile(idxCheck, level int) (string, string, string) {
+func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	var selectCheckpoint string
 	tasks := make(map[int][]string)
 	tasks[1] = []string{"countdown", "strlen"}

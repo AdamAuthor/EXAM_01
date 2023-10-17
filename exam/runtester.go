@@ -15,7 +15,7 @@ import (
 	"strconv"
 )
 
-func RunTester(exercise string, level int, typeCheckpoint string) int {
+func RunTester(exercise string, level int, typeCheckpoint string) (bool, int) {
 	_, filename, _, _ := runtime.Caller(0)
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
@@ -23,7 +23,7 @@ func RunTester(exercise string, level int, typeCheckpoint string) int {
 	ex := exec.Command("go", "run", pathToTester)
 	if ex.Err != nil {
 		fmt.Println(ex.Err)
-		return -1
+		return false, -1
 	}
-	return level + 1
+	return true, level + 1
 }

@@ -86,9 +86,8 @@ func (e example) helpView() string {
 	return helpStyle("\n  ↑/↓: Navigate • Enter: Start Testing • q: Exit\n")
 }
 
-func InitTask(idxCheckpoint, level int) (string, string, bool) {
-	CreateDir()
-	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level)
+func InitTask(idxCheckpoint, level int, curTask string) int {
+	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level, curTask)
 	bModel, err := createGlamour(content)
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
@@ -99,6 +98,12 @@ func InitTask(idxCheckpoint, level int) (string, string, bool) {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
-	model.Clear()
-	return task, typeCheckpoint, access
+	checker, level := RunTester(task, level, typeCheckpoint)
+
+	if checker {
+		model.Clear()
+		return InitTask(idxCheckpoint, level, "")
+	}
+	return InitTask(idxCheckpoint, level, task)
+
 }
