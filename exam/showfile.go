@@ -8,6 +8,7 @@
 package exam
 
 import (
+	dp "academie/exam/displayerror"
 	"academie/model"
 	"fmt"
 	"os"
@@ -109,12 +110,9 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 	level, strErr := RunTester(task, level, typeCheckpoint)
 	if strErr != "" {
 		model.Clear()
-		model.Clear()
-		model.Clear()
+		dp.DisplayError(strErr)
 		return InitTask(idxCheckpoint, level, task)
 	}
 	model.Clear()
-	model.Clear()
-	model.Clear()
-	return InitTask(idxCheckpoint, level, task)
+	return InitTask(idxCheckpoint, level, "")
 }
