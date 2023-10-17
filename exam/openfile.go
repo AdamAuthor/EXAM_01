@@ -17,21 +17,21 @@ import (
 	"time"
 )
 
-func OpenFile(idx, level int) string {
+func OpenFile(idxCheck, level int) (string, string, string) {
 	var selectCheckpoint string
 	tasks := make(map[int][]string)
 	tasks[1] = []string{"countdown", "strlen"}
 
-	switch idx {
+	switch idxCheck {
 	case 1:
 		fmt.Println(1)
-		return ""
+		return "", "", ""
 	case 2:
 		fmt.Println(2)
-		return ""
+		return "", "", ""
 	case 3:
 		fmt.Println(3)
-		return ""
+		return "", "", ""
 	case 4:
 		selectCheckpoint = "final-checkpoint"
 	}
@@ -61,5 +61,5 @@ func OpenFile(idx, level int) string {
 
 	// Close the file.
 	f.Close()
-	return totalTask
+	return totalTask, randomTask, selectCheckpoint
 }

@@ -8,20 +8,22 @@
 package exam
 
 import (
+	"fmt"
 	"os/exec"
 	"path/filepath"
 	"runtime"
 	"strconv"
 )
 
-func RunTester(exercise string, level int, typeCheckpoint string) error {
+func RunTester(exercise string, level int, typeCheckpoint string) int {
 	_, filename, _, _ := runtime.Caller(0)
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
 	pathToTester := filepath.Join(rootDir, ".subject", typeCheckpoint, strconv.Itoa(level), exercise, "main.go")
 	ex := exec.Command("go", "run", pathToTester)
 	if ex.Err != nil {
-		return ex.Err
+		fmt.Println(ex.Err)
+		return -1
 	}
-	return nil
+	return level + 1
 }

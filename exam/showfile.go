@@ -86,8 +86,8 @@ func (e example) helpView() string {
 	return helpStyle("\n  ↑/↓: Navigate • Enter: Start Testing • q: Exit\n")
 }
 
-func InitTask(idx, level int) bool {
-	var content = OpenFile(idx, level)
+func InitTask(idxCheckpoint, level int) (string, string, bool) {
+	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level)
 	bModel, err := createGlamour(content)
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
@@ -99,5 +99,5 @@ func InitTask(idx, level int) bool {
 		os.Exit(1)
 	}
 	model.Clear()
-	return access
+	return task, typeCheckpoint, access
 }
