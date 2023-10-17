@@ -20,7 +20,7 @@ func main() {
 	model.RunProgress()
 	access := model.RunTerms()
 	var index int
-	level := 0
+	level := 1
 	if access {
 		index = model.RunSelect() + 1
 	} else {

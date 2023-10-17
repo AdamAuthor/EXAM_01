@@ -1,6 +1,6 @@
-Assignment name  : strlen
-Expected files   : strlen.go
-Allowed imports  : --
+Assignment name  : countdown
+Expected files   : main.go
+Allowed imports  : github.com/01-edu/z01.PrintRune
 --------------------------------------------------------------------------------
 ### Instructions
 
@@ -8,31 +8,16 @@ Allowed imports  : --
 
 ### Expected function
 
-```go
-func StrLen(s string) int {
+## countdown
 
-}
-```
+### Instructions
+
+Write a program that displays all digits in descending order, followed by a newline (`'\n'`).
 
 ### Usage
 
-Here is a possible program to test your function :
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-	l := StrLen("Hello World!")
-	fmt.Println(l)
-}
-```
-
-And its output :
-
 ```console
 $ go run .
-12
+9876543210
 $
 ```
