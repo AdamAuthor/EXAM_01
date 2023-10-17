@@ -111,6 +111,7 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 	if strErr != "" {
 		model.Clear()
 		dp.DisplayError(strErr)
+		model.Clear()
 		return InitTask(idxCheckpoint, level, task)
 	}
 	model.Clear()
