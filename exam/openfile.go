@@ -11,11 +11,17 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"math/rand"
 	"os"
+	"strconv"
+	"time"
 )
 
-func OpenFile(idx int) string {
+func OpenFile(idx, level int) string {
 	var selectCheckpoint string
+	tasks := make(map[int][]string)
+	tasks[1] = []string{"countdown", "strlen"}
+
 	switch idx {
 	case 1:
 		fmt.Println(1)
@@ -30,9 +36,10 @@ func OpenFile(idx int) string {
 		selectCheckpoint = "final-checkpoint"
 	}
 
-	
+	rand.Seed(time.Now().Unix())
 
-	f, err := os.Open("./.subjects/" + selectCheckpoint + "/1/countdown/attachment/subject.en.txt")
+
+	f, err := os.Open("./.subjects/" + selectCheckpoint + "/" + strconv.Itoa(level) + "/" + randomTaskLevel1 + "/attachment/subject.en.txt")
 	if err != nil {
 		panic(err)
 	}

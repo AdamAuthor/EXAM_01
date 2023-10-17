@@ -20,12 +20,13 @@ func main() {
 	model.RunProgress()
 	access := model.RunTerms()
 	var index int
+	level := 0
 	if access {
 		index = model.RunSelect() + 1
 	} else {
 		return
 	}
-	testStart := exam.InitTask(index)
+	testStart := exam.InitTask(index, level)
 
 	if testStart {
 
