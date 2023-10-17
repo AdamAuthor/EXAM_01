@@ -90,6 +90,9 @@ func (e example) helpView() string {
 }
 
 func InitTask(idxCheckpoint, level int, curTask string) int {
+	// task == 9
+	// congrats
+	
 	if exit {
 		model.Clear()
 		model.Clear()
