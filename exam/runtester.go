@@ -15,7 +15,7 @@ import (
 	"strconv"
 )
 
-func RunTester(exercise string, level int, typeCheckpoint string) (bool, int) {
+func RunTester(exercise string, level int, typeCheckpoint string) (bool, int, string) {
 	_, filename, _, _ := runtime.Caller(0)
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
@@ -27,17 +27,16 @@ func RunTester(exercise string, level int, typeCheckpoint string) (bool, int) {
 		if ok {
 			// Этот код будет выполнен, если команда завершилась с ошибкой.
 			fmt.Println(string(exitErr.Stderr))
-			return false, level
+			return false, level, string(exitErr.Stderr)
 		} else if !ok {
 			// Другой тип ошибки
-			fmt.Println(err)
-			return false, level
+			return false, level, err.Error()
 
 		} else {
 			fmt.Println(out)
-			return false, level
+			return false, level, "out"
 
 		}
 	}
-	return true, level + 1
+	return true, level + 1, ""
 }

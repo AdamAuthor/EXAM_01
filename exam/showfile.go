@@ -106,8 +106,7 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
-	checker, level := RunTester(task, level, typeCheckpoint)
-
+	checker, level, strErr := RunTester(task, level, typeCheckpoint)
 	if checker {
 		model.Clear()
 		model.Clear()
