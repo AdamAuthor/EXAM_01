@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/01-edu/go-tests/lib/challenge"
+	"academie/tester"
+
 	"github.com/01-edu/go-tests/lib/chars"
 	"github.com/01-edu/go-tests/lib/random"
 )
@@ -17,6 +18,6 @@ func main() {
 	}
 
 	for _, v := range args {
-		challenge.Program("alphamirror", v...)
+		tester.Program(".subjects/final-checkpoint/3/alphamirror/solutions", "alphamirror", v...)
 	}
 }

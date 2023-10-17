@@ -26,9 +26,7 @@ func main() {
 	} else {
 		return
 	}
-	testStart := exam.InitTask(index, level)
+	exam.CreateDir()
+	level = exam.InitTask(index, level, "")
 
-	if testStart {
-
-	}
 }

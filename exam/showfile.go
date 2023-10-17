@@ -19,6 +19,7 @@ import (
 )
 
 var access = false
+var exit = false
 
 var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
 
@@ -64,6 +65,7 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c", "esc":
+			exit = true
 			return e, tea.Quit
 		case "enter":
 			access = true
@@ -86,8 +88,14 @@ func (e example) helpView() string {
 	return helpStyle("\n  ↑/↓: Navigate • Enter: Start Testing • q: Exit\n")
 }
 
-func InitTask(idx, level int) bool {
-	var content = OpenFile(idx, level)
+func InitTask(idxCheckpoint, level int, curTask string) int {
+	if exit {
+		model.Clear()
+		model.Clear()
+		model.Clear()
+		os.Exit(0)
+	}
+	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level, curTask)
 	bModel, err := createGlamour(content)
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
@@ -98,6 +106,16 @@ func InitTask(idx, level int) bool {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
+	checker, level := RunTester(task, level, typeCheckpoint)
+
+	if checker {
+		model.Clear()
+		model.Clear()
+		model.Clear()
+		return InitTask(idxCheckpoint, level, "")
+	}
 	model.Clear()
-	return access
+	model.Clear()
+	model.Clear()
+	return InitTask(idxCheckpoint, level, task)
 }
