@@ -13,8 +13,9 @@ func main() {
 	access := model.RunTerms()
 
 	if access {
-		fmt.Println("Hello World!")
-	} else {
-		return
-	}
+        index := model.RunSelect()
+        fmt.Println(index + 1)
+    } else {
+        return
+    }
 }

@@ -11,6 +11,7 @@ import (
 )
 
 const content = `
+# Disclaimer
 Use GrademeEXAM responsibly for practice purposes.
 Success comes from understanding the code, there are no shortcuts.
 This tools has been created to help you review your errors and better understand your code issues.
@@ -21,13 +22,13 @@ by pressing "Enter" and using Grademe, you accept these terms.
 
 var access = false
 
-var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("#B7DDE1")).Render
+var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
 
 type example struct {
 	viewport viewport.Model
 }
 
-func newExample() (*example, error) {
+func createGlamour() (*example, error) {
 	const width = 78
 
 	vp := viewport.New(width, 20)
@@ -88,7 +89,7 @@ func (e example) helpView() string {
 }
 
 func RunTerms() bool {
-	model, err := newExample()
+	model, err := createGlamour()
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
 		os.Exit(1)
