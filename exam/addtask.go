@@ -3,6 +3,7 @@ package exam
 import (
 	"fmt"
 	"os"
+	"strconv"
 )
 
 func AddTask(checkpoint string) map[int][]string {
@@ -17,13 +18,24 @@ func AddTask(checkpoint string) map[int][]string {
 	// tasks[8] = []string{"brackets", "gcd", "grouping", "listsize", "options", "printmemory", "rpncalc"}
 	// tasks[9] = []string{"brainfuck", "itoabase", "listremoveif"}
 
-	files, err := os.ReadDir(checkpoint)
+	files, err := os.ReadDir("./.subjects/" + checkpoint)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return nil
 	}
-	for _, file := range files {
-		fmt.Println(file.Name())
+	var exams []string
+
+	for i := range files {
+		taskNames, err := os.ReadDir("./.subjects/" + checkpoint + "/" + strconv.Itoa(i+1) + "/")
+		if err != nil {
+			fmt.Println("Error:", err)
+			return nil
+		}
+		for _, name := range taskNames {
+			exams = append(exams, string(name.Name()))
+		}
+		tasks[i+1] = exams
+		exams = []string{}
 	}
 
 	return tasks
