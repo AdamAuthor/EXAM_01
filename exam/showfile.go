@@ -98,6 +98,7 @@ func InitTask(idxCheckpoint, level int) (string, string, bool) {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
+	CreateDir()
 	model.Clear()
 	return task, typeCheckpoint, access
 }
