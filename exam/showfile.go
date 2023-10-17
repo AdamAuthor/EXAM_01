@@ -111,7 +111,7 @@ func InitTask(idxCheckpoint, level int, curTask string) int {
 		model.Clear()
 		model.Clear()
 		model.Clear()
-		return InitTask(idxCheckpoint, level, "")
+		return InitTask(idxCheckpoint, level, task)
 	}
 	model.Clear()
 	model.Clear()
