@@ -24,6 +24,8 @@ func RunTester(exercise string, level int, typeCheckpoint string) int {
 	if ex.Err != nil {
 		fmt.Println(ex.Err)
 		return -1
+	} else {
+		//pass
 	}
 	return level + 1
 }
