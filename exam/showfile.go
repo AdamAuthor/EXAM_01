@@ -87,6 +87,7 @@ func (e example) helpView() string {
 }
 
 func InitTask(idxCheckpoint, level int) (string, string, bool) {
+	CreateDir()
 	var content, task, typeCheckpoint = OpenFile(idxCheckpoint, level)
 	bModel, err := createGlamour(content)
 	if err != nil {
@@ -98,7 +99,6 @@ func InitTask(idxCheckpoint, level int) (string, string, bool) {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
-	CreateDir()
 	model.Clear()
 	return task, typeCheckpoint, access
 }
