@@ -32,7 +32,7 @@ func OpenFile(idxCheck, level int, task string) (string, string, string) {
 		selectCheckpoint = "final-checkpoint"
 	}
 
-	tasks := AddTask(selectCheckpoint)
+	tasks, _ := AddTask(selectCheckpoint)
 
 	rand.Seed(time.Now().UnixNano())
 	if task != "" {

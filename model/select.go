@@ -79,7 +79,6 @@ func RunSelect() int {
 		fmt.Println("Error running program:", err)
 		os.Exit(1)
 	}
-
 	// Return the index of the selected item.
 	return selected
 }

@@ -6,22 +6,12 @@ import (
 	"strconv"
 )
 
-func AddTask(checkpoint string) map[int][]string {
+func AddTask(checkpoint string) (map[int][]string, int) {
 	tasks := make(map[int][]string)
-	// tasks[1] = []string{"countdown", "strlen"}
-	// tasks[2] = []string{"firstrune", "lastrune", "lastword", "reduceint", "rot13"}
-	// tasks[3] = []string{"alphamirror", "chunk", "tabmult"}
-	// tasks[4] = []string{"inter", "ispowerof2", "piglatin", "romannumbers", "swapbits", "union"}
-	// tasks[5] = []string{"printhex", "repeatalpha"}
-	// tasks[6] = []string{"hiddenp", "revwstr", "rostring", "slice", "split"}
-	// tasks[7] = []string{"addprimesum", "atoibase", "fprime", "itoa"}
-	// tasks[8] = []string{"brackets", "gcd", "grouping", "listsize", "options", "printmemory", "rpncalc"}
-	// tasks[9] = []string{"brainfuck", "itoabase", "listremoveif"}
-
 	files, err := os.ReadDir("./.subjects/" + checkpoint)
 	if err != nil {
 		fmt.Println("Error:", err)
-		return nil
+		return nil, 0
 	}
 	var exams []string
 
@@ -29,7 +19,7 @@ func AddTask(checkpoint string) map[int][]string {
 		taskNames, err := os.ReadDir("./.subjects/" + checkpoint + "/" + strconv.Itoa(i+1) + "/")
 		if err != nil {
 			fmt.Println("Error:", err)
-			return nil
+			return nil, 0
 		}
 		for _, name := range taskNames {
 			exams = append(exams, string(name.Name()))
@@ -38,5 +28,22 @@ func AddTask(checkpoint string) map[int][]string {
 		exams = []string{}
 	}
 
-	return tasks
+	return tasks, len(tasks)
+}
+
+func (c *Checkpoint) GetByCheckpoint() int {
+	var lenTask int
+	switch c.IdxCheck {
+	case 1:
+		_, lenTask = AddTask("checkpoint-1")
+	case 2:
+		_, lenTask = AddTask("checkpoint-2")
+	case 3:
+		_, lenTask = AddTask("checkpoint-3")
+	case 4:
+		_, lenTask = AddTask("final-checkpoint")
+	default:
+		return 0
+	}
+	return lenTask
 }
