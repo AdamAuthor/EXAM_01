@@ -28,6 +28,6 @@ func main() {
 	}
 
 	for _, s := range args {
-		tester.Program(".subjects/final-checkpoint/3/inter/solutions", "inter", strings.Fields(s)...)
+		tester.Program(".subjects/final-checkpoint/4/inter/solutions", "inter", strings.Fields(s)...)
 	}
 }
