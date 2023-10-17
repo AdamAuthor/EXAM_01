@@ -1,5 +1,5 @@
-Assignment name  : rot13
-Expected files   : main.go
+Assignment name  : lastrune
+Expected files   : lastrune.go
 Allowed imports  : --
 --------------------------------------------------------------------------------
 ## rot13
