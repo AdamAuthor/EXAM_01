@@ -1,6 +1,7 @@
 package main
 
 import (
+	"academie/exam"
 	"academie/model"
 	"fmt"
 
@@ -9,13 +10,18 @@ import (
 )
 
 func main() {
+	model.Clear()
 	model.RunProgress()
 	access := model.RunTerms()
-
+	var index int
 	if access {
-        index := model.RunSelect()
-        fmt.Println(index + 1)
-    } else {
-        return
-    }
+		index = model.RunSelect() + 1
+	} else {
+		return
+	}
+	testStart := exam.InitTask(index)
+
+	if testStart {
+		fmt.Println("Start testing...")
+	}
 }
