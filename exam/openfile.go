@@ -9,6 +9,7 @@ package exam
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"io"
 	"math/rand"
@@ -19,6 +20,7 @@ import (
 
 func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	var selectCheckpoint string
+	var randomTask string
 	tasks := make(map[int][]string)
 	tasks[1] = []string{"countdown", "strlen"}
 
@@ -35,9 +37,15 @@ func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	case 4:
 		selectCheckpoint = "final-checkpoint"
 	}
-
 	rand.Seed(time.Now().UnixNano())
-	randomTask := tasks[level][rand.Intn(len(tasks[level]))]
+	if task != "" {
+		randomTask = task
+	} else {
+		if len(tasks[level]) == 0 {
+			panic(errors.New("invalid level"))
+		}
+		randomTask = tasks[level][rand.Intn(len(tasks[level]))]
+	}
 	f, err := os.Open("./.subjects/" + selectCheckpoint + "/" + strconv.Itoa(level) + "/" + randomTask + "/attachment/subject.en.txt")
 	if err != nil {
 		panic(err)

@@ -1,44 +1,29 @@
-Assignment name  : lastrune
-Expected files   : lastrune.go
+Assignment name  : rot13
+Expected files   : main.go
 Allowed imports  : --
 --------------------------------------------------------------------------------
-## lastrune
+## rot13
 
 ### Instructions
 
-Write a function that returns the last `rune` of a `string`.
+Write a program that takes a `string` and displays it, replacing each of its
+letters by the letter 13 spots ahead in alphabetical order.
 
-### Expected function
+- 'z' becomes 'm' and 'Z' becomes 'M'. The case of the letter stays the same.
 
-```go
-func LastRune(s string) rune {
+- The output will be followed by a newline (`'\n'`).
 
-}
-```
+- If the number of arguments is different from 1, the program displays nothing.
 
 ### Usage
 
-Here is a possible program to test your function :
-
-```go
-package main
-
-import (
-	"github.com/01-edu/z01"
-)
-
-func main() {
-	z01.PrintRune(LastRune("Hello!"))
-	z01.PrintRune(LastRune("Salut!"))
-	z01.PrintRune(LastRune("Ola!"))
-	z01.PrintRune('\n')
-}
-```
-
-And its output :
-
 ```console
+$ go run . "abc"
+nop
+$ go run . "hello there"
+uryyb gurer
+$ go run . "HELLO, HELP"
+URYYB, URYC
 $ go run .
-!!!
 $
 ```
