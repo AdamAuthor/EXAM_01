@@ -19,7 +19,7 @@ import (
 
 const content = `
 # Disclaimer
-## Made by: AdamAuthor, Aibekabdi, alnshine
+## Made by: adamauthor, aibekabdi, alnshine, hhaakkimm
 
 Use GrademeEXAM responsibly for practice purposes.
 Success comes from understanding the code, there are no shortcuts.
