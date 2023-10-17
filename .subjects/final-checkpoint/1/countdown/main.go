@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/01-edu/go-tests/lib/challenge"
-)
+import "academie/tester"
 
 func main() {
-	challenge.Program("countdown")
+	tester.Program(".subjects/final-checkpoint/1/countdown/solutions", "countdown")
 }
