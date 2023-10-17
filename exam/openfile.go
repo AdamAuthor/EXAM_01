@@ -33,7 +33,6 @@ func OpenFile(idxCheck, level int, task string) (string, string, string) {
 	}
 
 	tasks, _ := AddTask(selectCheckpoint)
-
 	rand.Seed(time.Now().UnixNano())
 	if task != "" {
 		randomTask = task
@@ -63,7 +62,6 @@ func OpenFile(idxCheck, level int, task string) (string, string, string) {
 
 		totalTask += line
 	}
-
 	// Close the file.
 	f.Close()
 	return totalTask, randomTask, selectCheckpoint

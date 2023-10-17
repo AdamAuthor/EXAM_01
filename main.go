@@ -32,8 +32,7 @@ func main() {
 		Level:    level,
 		Task:     "",
 	}
-	checkPointStruct.Level = checkPointStruct.GetByCheckpoint()
+	checkPointStruct.LenLevels = checkPointStruct.GetByCheckpoint()
 	exam.CreateDir()
-	level = exam.InitTask(index, level, "")
-
+	checkPointStruct.InitTask()
 }

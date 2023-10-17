@@ -7,18 +7,8 @@ import (
 	"github.com/01-edu/go-tests/solutions"
 )
 
-type NodeL struct {
-	Data interface{}
-	Next *NodeL
-}
-
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
-
-func listPushBack(l *List, data interface{}) {
-	n := &NodeL{Data: data}
+func listPushBack(l *student.List, data interface{}) {
+	n := &student.NodeL{Data: data}
 
 	if l.Head == nil {
 		l.Head = n
@@ -28,7 +18,7 @@ func listPushBack(l *List, data interface{}) {
 	l.Tail = n
 }
 
-func copyList(listStu *List) *solutions.List {
+func copyList(listStu *student.List) *solutions.List {
 	listSol := &solutions.List{}
 	for it := listStu.Head; it != nil; it = it.Next {
 		solutions.ListPushBack(listSol, it.Data)
@@ -48,7 +38,7 @@ func main() {
 
 	for _, arg := range table {
 		link1 := &solutions.List{}
-		link2 := &List{}
+		link2 := &student.List{}
 
 		for _, item := range arg.Data {
 			solutions.ListPushBack(link1, item)
@@ -69,7 +59,7 @@ func main() {
 	}
 	// Remove more than one node at the begging
 	link1 := &solutions.List{}
-	link2 := &List{}
+	link2 := &student.List{}
 
 	for _, item := range table[2].Data {
 		solutions.ListPushBack(link1, item)

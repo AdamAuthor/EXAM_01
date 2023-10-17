@@ -17,6 +17,6 @@ func main() {
 		random.Str(chars.Alnum, random.IntBetween(1, 15)),
 	)
 	for _, arg := range args {
-		challenge.Function("LastRune", student.LastRune, solutions.LastRune, arg)
+		challenge.Function("lastrune", student.LastRune, solutions.LastRune, arg)
 	}
 }

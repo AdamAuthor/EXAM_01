@@ -94,7 +94,9 @@ func (c *Checkpoint) InitTask() int {
 		model.Clear()
 		os.Exit(0)
 	}
-	var content, task, typeCheckpoint = OpenFile(c.idxCheck, c.level, curTask)
+	fmt.Println(c)
+	var content, typeCheckpoint string
+	content, c.Task, typeCheckpoint = OpenFile(c.IdxCheck, c.Level, c.Task)
 	bModel, err := createGlamour(content)
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
@@ -105,13 +107,15 @@ func (c *Checkpoint) InitTask() int {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
-	c.level, strErr := RunTester(task, c.level, typeCheckpoint)
+	var strErr string
+	c.Level, strErr = RunTester(c.Task, c.Level, typeCheckpoint)
 	if strErr != "" {
 		model.Clear()
 		dp.DisplayError(strErr)
 		model.Clear()
-		return InitTask(c.idxCheck, level, task)
+		return c.InitTask()
 	}
 	model.Clear()
-	return InitTask(c.idxCheck, level, "")
+	c.Task = ""
+	return c.InitTask()
 }
