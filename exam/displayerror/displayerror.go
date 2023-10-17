@@ -55,7 +55,7 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.KeyMsg:
 		switch msg.String() {
-		case "q", "ctrl+c", "esc":
+		case "enter":
 			return e, tea.Quit
 		default:
 			var cmd tea.Cmd
@@ -72,7 +72,7 @@ func (e example) View() string {
 }
 
 func (e example) helpView() string {
-	return helpStyle("\n  ↑/↓: Navigate • q: Return to task\n")
+	return helpStyle("\n  ↑/↓: Navigate • Enter: Return to task\n")
 }
 
 func DisplayError(strErr string) {
