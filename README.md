@@ -13,7 +13,7 @@
  Our team is not responsible for the success or failure of the exam, possible mistakes made in the preparation process, or for any result obtained by using this tool.
 
  ## Installation
- Clone repository from github and rune "make" command:
+ Clone repository from github and run "make" command:
  git clone https://github.com/AdamAuthor/EXAM_01.git
 
  ## Usage
