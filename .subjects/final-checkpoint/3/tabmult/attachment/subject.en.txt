@@ -37,3 +37,5 @@ $ go run .
 
 $
 ```
+
+# create folder '/tabmult' in 'piscine' folder and put your main.go

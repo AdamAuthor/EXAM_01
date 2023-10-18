@@ -47,3 +47,5 @@ $ go run .
 []string{"package"}
 []string(nil)
 ```
+
+# put slice.go to 'piscine' folder

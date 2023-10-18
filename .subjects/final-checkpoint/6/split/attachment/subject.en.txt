@@ -38,3 +38,5 @@ $ go run .
 []string{"Hello", "how", "are", "you?"}
 $
 ```
+
+# put split.go to 'piscine' folder

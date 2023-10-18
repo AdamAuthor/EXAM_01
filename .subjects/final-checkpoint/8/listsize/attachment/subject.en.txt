@@ -64,3 +64,5 @@ $ go run .
 4
 $
 ```
+
+# put listsize.go to 'piscine' folder

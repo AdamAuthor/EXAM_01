@@ -27,3 +27,5 @@ $ go run . 5 7
 0
 $
 ```
+
+# create folder '/addprimesum' in 'piscine' folder and put your main.go

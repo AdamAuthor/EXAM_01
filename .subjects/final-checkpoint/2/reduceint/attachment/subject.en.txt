@@ -50,3 +50,5 @@ $ go run .
 250
 $
 ```
+
+# put reduceint.go to 'piscine' folder

@@ -17,3 +17,5 @@ func Itoa(n int) string {
 
 }
 ```
+
+# put itoa.go to 'piscine' folder

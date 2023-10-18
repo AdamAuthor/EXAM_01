@@ -63,3 +63,5 @@ $ go run . "     1      3 * ksd 2 -" | cat -e
 Error$
 $
 ```
+
+# create folder '/rpncalc' in 'piscine' folder and put your main.go

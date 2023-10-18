@@ -28,3 +28,5 @@ $ go run . "" | cat -e
 $
 $
 ```
+
+# create folder '/repeatalpha' in 'piscine' folder and put your main.go

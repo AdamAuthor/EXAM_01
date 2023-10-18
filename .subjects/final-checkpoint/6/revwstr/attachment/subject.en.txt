@@ -27,3 +27,5 @@ $ go run . "" | cat-e
 $
 $
 ```
+
+# create folder '/revwstr' in 'piscine' folder and put your main.go

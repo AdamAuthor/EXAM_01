@@ -38,3 +38,5 @@ $ go run . "(s)" ""
 $ go run . "i" "Something in the air"
 $
 ```
+
+# create folder '/groupings' in 'piscine' folder and put your main.go

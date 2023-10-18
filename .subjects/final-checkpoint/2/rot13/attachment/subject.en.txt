@@ -27,3 +27,5 @@ URYYB, URYC
 $ go run .
 $
 ```
+
+# create folder '/rot13' in 'piscine' folder and put your main.go

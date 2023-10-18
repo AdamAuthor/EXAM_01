@@ -29,3 +29,5 @@ $
 $ go run . rien | cat -e
 $
 ```
+
+# create folder '/union' in 'piscine' folder and put your main.go

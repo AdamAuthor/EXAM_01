@@ -27,3 +27,5 @@ OK$
 $ go run .
 $
 ```
+
+# create folder '/brackets' in 'piscine' folder and put your main.go

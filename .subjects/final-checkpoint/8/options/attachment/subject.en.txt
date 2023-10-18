@@ -49,3 +49,5 @@ $ go run . - | cat -e
 Invalid Option$
 $
 ```
+
+# create folder '/options' in 'piscine' folder and put your main.go

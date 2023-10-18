@@ -25,3 +25,5 @@ $ go run . "123 132 1" | cat -e
 ERROR$
 $
 ```
+
+# create folder '/printhex' in 'piscine' folder and put your main.go

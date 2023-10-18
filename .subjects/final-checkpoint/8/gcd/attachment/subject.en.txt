@@ -29,3 +29,5 @@ $ go run .
 $ go run . 50 12 4
 $
 ```
+
+# create folder '/gcd' in 'piscine' folder and put your main.go

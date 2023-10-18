@@ -104,3 +104,5 @@ $ go run .
 Hello -> There -> How -> are -> you -> <nil>
 $
 ```
+
+# put listremoveif.go to 'piscine' folder

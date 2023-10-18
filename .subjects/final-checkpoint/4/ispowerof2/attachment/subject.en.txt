@@ -29,3 +29,5 @@ $ go run .
 $ go run . 64 1024
 $
 ```
+
+# create folder '/ispowerof2' in 'piscine' folder and put your main.go

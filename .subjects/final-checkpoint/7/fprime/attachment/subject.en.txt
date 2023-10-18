@@ -30,3 +30,5 @@ $ go run . 0
 $ go run . 1
 $
 ```
+
+# create folder '/fprime' in 'piscine' folder and put your main.go

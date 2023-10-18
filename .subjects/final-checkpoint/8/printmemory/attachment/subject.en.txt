@@ -42,3 +42,5 @@ $ go run . | cat -e
 hello..*..$
 $
 ```
+
+# put printmemory.go to 'piscine' folder

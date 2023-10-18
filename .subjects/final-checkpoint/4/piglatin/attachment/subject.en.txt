@@ -33,3 +33,5 @@ No vowels$
 $ go run . something else | cat -e
 $
 ```
+
+# create folder '/piglatin' in 'piscine' folder and put your main.go

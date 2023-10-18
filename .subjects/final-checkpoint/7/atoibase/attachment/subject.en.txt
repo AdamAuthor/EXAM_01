@@ -64,3 +64,5 @@ $ go run .
 0
 $
 ```
+
+# put atoibase.go to 'piscine' folder

@@ -29,3 +29,5 @@ Example:
     / \
 0001 | 0100
 ```
+
+# put swapbits.go to 'piscine' folder

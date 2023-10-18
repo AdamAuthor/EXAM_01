@@ -36,3 +36,5 @@ $ go run .
 12
 $
 ```
+
+# put strlen.go to 'piscine' folder

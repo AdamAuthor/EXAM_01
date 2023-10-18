@@ -28,3 +28,4 @@ $ go run . "DD" "DABC" | cat -e
 $ go run .
 $
 ```
+# create folder '/hiddenp' in 'piscine' folder and put your main.go

@@ -42,3 +42,5 @@ $ go run .
 HSO
 $
 ```
+
+# put firstrune.go to 'piscine' folder

@@ -21,3 +21,5 @@ $ go run .
 9876543210
 $
 ```
+
+# create folder '/countdown' in 'piscine' folder and put your main.go

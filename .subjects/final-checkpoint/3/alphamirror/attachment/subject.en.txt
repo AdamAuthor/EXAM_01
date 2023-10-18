@@ -29,3 +29,5 @@ $
 $ go run .
 $
 ```
+
+# create folder '/alphamirror' in 'piscine' folder and put your main.go

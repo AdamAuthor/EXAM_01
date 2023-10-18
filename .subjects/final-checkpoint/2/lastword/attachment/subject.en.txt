@@ -27,3 +27,5 @@ $ go run . "  lorem,ipsum  " | cat -e
 lorem,ipsum$
 $
 ```
+
+# create folder '/lastword' in 'piscine' folder and put your main.go

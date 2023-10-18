@@ -30,3 +30,4 @@ $ go run . | cat -e
 $
 $
 ```
+# create folder '/rostring' in 'piscine' folder and put your main.go
