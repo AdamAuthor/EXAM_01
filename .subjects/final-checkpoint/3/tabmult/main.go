@@ -1,9 +1,9 @@
 package main
 
 import (
+	"academie/tester"
 	"strconv"
 
-	"github.com/01-edu/go-tests/lib/challenge"
 	"github.com/01-edu/go-tests/lib/random"
 )
 
@@ -17,6 +17,6 @@ func main() {
 	}
 
 	for _, arg := range table {
-		challenge.Program("tabmult", arg)
+		tester.Program(".subjects/final-checkpoint/3/tabmult/solutions", "tabmult", arg)
 	}
 }

@@ -90,6 +90,11 @@ func (e example) helpView() string {
 }
 
 func (c *Checkpoint) InitTask() int {
+	if c.Level > c.LenLevels {
+		model.Clear()
+		fmt.Println("congratulations!!!")
+		os.Exit(0)
+	}
 	if exit {
 		model.Clear()
 		os.Exit(0)
