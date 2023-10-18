@@ -1,6 +1,6 @@
-Assignment name  : listremoveif
-Expected files   : listremoveif.go
-Allowed imports  :
+# Assignment name  : listremoveif
+# Expected files   : /piscine/listremoveif.go
+# Allowed imports  :
 --------------------------------------------------------------------------------
 ## listremoveif
 

@@ -1,6 +1,6 @@
-Assignment name  : brainfuck
-Expected files   : main.go
-Allowed imports  : github.com/01-edu/z01.PrintRune, os.*
+# Assignment name  : brainfuck
+# Expected files   : /piscine/brainfuck/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune, os.*
 --------------------------------------------------------------------------------
 ## brainfuck
 

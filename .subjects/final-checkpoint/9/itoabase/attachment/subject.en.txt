@@ -1,6 +1,6 @@
-Assignment name  : itoabase
-Expected files   : itoabase.go
-Allowed imports  : 
+# Assignment name  : itoabase
+# Expected files   : /piscine/itoabase.go
+# Allowed imports  : 
 --------------------------------------------------------------------------------
 ## itoabase
 

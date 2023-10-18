@@ -1,6 +1,6 @@
-Assignment name  : rpncalc
-Expected files   : main.go
-Allowed imports  : ["strconv.Atoi", "os.*", "fmt.*", "strings.Split", "--allow-builtin"]
+# Assignment name  : rpncalc
+# Expected files   : /piscine/attachment/main.go
+# Allowed imports  : ["strconv.Atoi", "os.*", "fmt.*", "strings.Split", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## rpncalc
 
