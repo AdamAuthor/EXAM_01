@@ -5,12 +5,10 @@
 // ██║  ██║╚██████╗██║  ██║██████╔╝███████╗██║ ╚═╝ ██║██║███████╗    ╚██████╔╝██║ ╚████║███████╗
 // ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═══╝╚══════╝
 
-package exam
+package congrats
 
 import (
-	dp "academie/exam/displayerror"
 	"academie/model"
-	"academie/model/congrats"
 	"fmt"
 	"os"
 
@@ -20,8 +18,17 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-var access = false
-var exit = false
+const content = `
+# Congratulations!
+
+You did it! 🎉🥳
+
+## We're so proud of your achievement.
+
+Your hard work and dedication have paid off, and we want to congratulate you on your success. This is just the beginning of many more great things to come. Keep up the fantastic work!
+
+*Best wishes for your future endeavors!* 🌟
+`
 
 var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
 
@@ -29,7 +36,7 @@ type example struct {
 	viewport viewport.Model
 }
 
-func createGlamour(content string) (*example, error) {
+func createGlamour() (*example, error) {
 	const width = 78
 
 	vp := viewport.New(width, 20)
@@ -67,10 +74,8 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c", "esc":
-			exit = true
 			return e, tea.Quit
 		case "enter":
-			access = true
 			return e, tea.Quit
 		default:
 			var cmd tea.Cmd
@@ -87,40 +92,21 @@ func (e example) View() string {
 }
 
 func (e example) helpView() string {
-	return helpStyle("\n  ↑/↓: Navigate • Enter: Start Testing • q: Exit\n")
+	return helpStyle("\n  ↑/↓: Navigate • Enter: Accept • q: Exit\n")
 }
 
-func (c *Checkpoint) InitTask() int {
-	if c.Level > c.LenLevels {
-		model.Clear()
-		congrats.Congrats()
-		os.Exit(0)
-	}
-	if exit {
-		model.Clear()
-		os.Exit(0)
-	}
-	var content, typeCheckpoint string
-	content, c.Task, typeCheckpoint = OpenFile(c.IdxCheck, c.Level, c.Task)
-	bModel, err := createGlamour(content)
+func Congrats() {
+	model.RunProgress()
+	model, err := createGlamour()
 	if err != nil {
 		fmt.Println("Could not initialize Bubble Tea model:", err)
 		os.Exit(1)
 	}
 
-	if _, err := tea.NewProgram(bModel).Run(); err != nil {
+	if _, err := tea.NewProgram(model).Run(); err != nil {
 		fmt.Println("Bummer, there's been an error:", err)
 		os.Exit(1)
 	}
-	var strErr string
-	c.Level, strErr = RunTester(c.Task, c.Level, typeCheckpoint)
-	if strErr != "" {
-		model.Clear()
-		dp.DisplayError(strErr)
-		model.Clear()
-		return c.InitTask()
-	}
-	model.Clear()
-	c.Task = ""
-	return c.InitTask()
+	tea.ClearScreen()
+	os.Exit(0)
 }
