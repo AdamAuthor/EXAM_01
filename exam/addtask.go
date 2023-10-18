@@ -27,7 +27,7 @@ func AddTask(checkpoint string) (map[int][]string, int) {
 		tasks[i+1] = exams
 		exams = []string{}
 	}
-
+	fmt.Println(tasks)
 	return tasks, len(tasks)
 }
 
