@@ -1,6 +1,6 @@
-Assignment name  : listsize
-Expected files   : listsize.go
-Allowed imports  : 
+# Assignment name  : listsize
+# Expected files   : /piscine/listsize.go
+# Allowed imports  : 
 --------------------------------------------------------------------------------
 ## listsize
 

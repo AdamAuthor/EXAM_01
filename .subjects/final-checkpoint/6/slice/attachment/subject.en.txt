@@ -1,6 +1,6 @@
-Assignment name  : slice
-Expected files   : slice.go
-Allowed imports  : 
+# Assignment name  : slice
+# Expected files   : /piscine/slice.go
+# Allowed imports  : 
 --------------------------------------------------------------------------------
 ## slice
 

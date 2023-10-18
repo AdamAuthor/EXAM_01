@@ -1,6 +1,6 @@
-Assignment name  : addprimesum
-Expected files   : main.go
-Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.*"
+# Assignment name  : addprimesum
+# Expected files   : /piscine/addprimesum/main.go
+# Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.*"
 --------------------------------------------------------------------------------
 ## addprimesum
 

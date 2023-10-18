@@ -1,6 +1,6 @@
-Assignment name  : fprime
-Expected files   : main.go
-Allowed imports  : ["strconv.Atoi", "os.Args", "fmt.*", "--allow-builtin"]
+# Assignment name  : fprime
+# Expected files   : /piscine/fprime/main.go
+# Allowed imports  : ["strconv.Atoi", "os.Args", "fmt.*", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## fprime
 

@@ -1,6 +1,6 @@
-Assignment name  : itoa
-Expected files   : itoa.go
-Allowed imports  : ["len", "--allow-builtin"]
+# Assignment name  : itoa
+# Expected files   : /piscine/itoa.go
+# Allowed imports  : ["len", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## itoa
 

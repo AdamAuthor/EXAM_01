@@ -1,6 +1,6 @@
-Assignment name  : printmemory
-Expected files   : printmemory.go
-Allowed imports  : "github.com/01-edu/z01.PrintRune","unicode.IsGraphic"
+# Assignment name  : printmemory
+# Expected files   : /piscine/printmemory.go
+# Allowed imports  : "github.com/01-edu/z01.PrintRune","unicode.IsGraphic"
 --------------------------------------------------------------------------------
 ## printmemory
 

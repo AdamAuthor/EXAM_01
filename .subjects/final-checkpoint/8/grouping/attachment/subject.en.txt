@@ -1,6 +1,6 @@
-Assignment name  : grouping
-Expected files   : main.go
-Allowed imports  : ["fmt.Printf", "os.Args", "--allow-builtin"]
+# Assignment name  : grouping
+# Expected files   : /piscine/grouping/main.go
+# Allowed imports  : ["fmt.Printf", "os.Args", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## grouping
 
