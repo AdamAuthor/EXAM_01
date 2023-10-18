@@ -1,5 +1,5 @@
-Assignment name  : lastword
-Expected files   : main.go
+# Assignment name  : lastword
+# Expected files   : /piscine/lastword/main.go
 Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.Args"
 --------------------------------------------------------------------------------
 ## lastword

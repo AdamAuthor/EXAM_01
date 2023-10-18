@@ -1,5 +1,5 @@
-Assignment name  : ispowerof2
-Expected files   : main.go
+# Assignment name  : ispowerof2
+# Expected files   : /piscine/ispowerof2/main.go
 Allowed imports  : ["github.com/01-edu/z01.PrintRune", "strconv.Atoi", "os.Args", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## ispowerof2

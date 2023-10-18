@@ -1,12 +1,12 @@
-Assignment name  : romannumbers
-Expected files   : main.go
+# Assignment name  : romannumbers
+# Expected files   : /piscine/romannumbers/main.go
 Allowed imports  : ["os.Args", "fmt.Printf", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## romannumbers
 
 ### Instructions
 
-# create folder '/romannumbers' in 'piscine' folder and put your main.go
+# create folder '/romannumbers' in 'piscine' folder and put your 'main.go'
 Write a program called `rn`. The objective is to convert a number, given as an argument, into a roman number and print it with its roman number calculation.
 
 The program should have a limit of `4000`. In case of an invalid number, for example `"hello"` or `0` the program should print `ERROR: cannot convert to roman digit`.

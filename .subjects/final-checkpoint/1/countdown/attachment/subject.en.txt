@@ -1,5 +1,5 @@
-Assignment name  : countdown
-Expected files   : main.go
+# Assignment name  : countdown
+# Expected files   : /countdown/main.go
 Allowed imports  : github.com/01-edu/z01.PrintRune
 --------------------------------------------------------------------------------
 ### Instructions

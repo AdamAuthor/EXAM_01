@@ -1,5 +1,5 @@
-Assignment name  : union
-Expected files   : main.go
+# Assignment name  : union
+# Expected files   : /piscine/union/main.go
 Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## union

@@ -1,5 +1,5 @@
-Assignment name  : swapbits
-Expected files   : swapbits.go
+# Assignment name  : swapbits
+# Expected files   : /piscine/swapbits.go
 Allowed imports  : ["--allow-builtin"]
 --------------------------------------------------------------------------------
 
