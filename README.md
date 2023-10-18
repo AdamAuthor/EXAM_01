@@ -5,7 +5,7 @@
  ## Description
  This project is for practice for your checkpoints
 
- ## Disclaimer from the adamauthor, aibekabdi, alnshine, hhaakkimm team of creators
+ ## Disclaimer from the [adamauthor](https://github.com/AdamAuthor), [aibekabdi](https://github.com/Aibekabdi), [alnshine](https://github.com/alnshine), [Hakeem_ata](https://github.com/hhaakkimm) team of creators
 
  This tool is designed to help you prepare for the 01 exams, by analyzing and helping you understand errors in your code. 
  It was created to provide additional resources and training facilities, and does not guarantee the successful completion of exams or the achievement of specific results.
