@@ -113,7 +113,9 @@ func (c *Checkpoint) InitTask() int {
 		os.Exit(1)
 	}
 	var strErr string
-	c.Level, strErr = RunTester(c.Task, c.Level, typeCheckpoint)
+	if !exit {
+		c.Level, strErr = RunTester(c.Task, c.Level, typeCheckpoint)
+	}
 	if strErr != "" {
 		model.Clear()
 		dp.DisplayError(strErr)
