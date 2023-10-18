@@ -17,8 +17,8 @@
  git clone https://github.com/AdamAuthor/EXAM_01.git
 
  ## Usage
-```
-    $cd EXAM_01
-    $make
+ ```
+ $cd EXAM_01
+ $make
 
-```
+ ```
