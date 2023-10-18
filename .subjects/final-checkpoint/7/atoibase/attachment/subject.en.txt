@@ -1,6 +1,6 @@
-Assignment name  : atoibase
-Expected files   : atoibase.go
-Allowed imports  : ["github.com/01-edu/z01.PrintRune", "--allow-builtin"]
+# Assignment name  : atoibase
+# Expected files   : /piscine/atoibase.go
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## atoibase
 

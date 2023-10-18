@@ -1,6 +1,6 @@
-Assignment name  : split
-Expected files   : split.go
-Allowed imports  : ["make", "--allow-builtin"]
+# Assignment name  : split
+# Expected files   : /piscine/split.go
+# Allowed imports  : ["make", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## split
 

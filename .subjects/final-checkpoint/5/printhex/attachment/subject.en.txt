@@ -1,6 +1,6 @@
-Assignment name  : printhex
-Expected files   : main.go
-Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "strconv.*", "--allow-builtin"]
+# Assignment name  : printhex
+# Expected files   : /piscine/printhex/main.go
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "strconv.*", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## printhex
 

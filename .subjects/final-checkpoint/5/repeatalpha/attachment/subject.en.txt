@@ -1,6 +1,6 @@
-Assignment name  : repeatalpha
-Expected files   : main.go
-Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "--allow-builtin"]
+# Assignment name  : repeatalpha
+# Expected files   : /piscine/repeatalpha/main.go
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## repeatalpha
 

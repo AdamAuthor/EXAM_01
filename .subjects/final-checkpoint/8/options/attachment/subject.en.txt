@@ -1,6 +1,6 @@
-Assignment name  : options
-Expected files   : main.go
-Allowed imports  : os.* fmt.*
+# Assignment name  : options
+# Expected files   : /piscine/options/main.go
+# Allowed imports  : os.* fmt.*
 --------------------------------------------------------------------------------
 # options
 

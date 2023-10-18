@@ -1,6 +1,6 @@
-Assignment name  : hiddenp
-Expected files   : main.go
-Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-builtin"]
+# Assignment name  : hiddenp
+# Expected files   : /piscine/hiddenp/main.go
+# Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## hiddenp
 

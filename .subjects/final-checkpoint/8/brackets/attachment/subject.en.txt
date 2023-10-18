@@ -1,6 +1,6 @@
-Assignment name  : brackets
-Expected files   : main.go
-Allowed imports  : "strconv.Atoi", "os.*","fmt.*",strings.Split
+# Assignment name  : brackets
+# Expected files   : /piscine/brackets/main.go
+# Allowed imports  : "strconv.Atoi", "os.*","fmt.*",strings.Split
 --------------------------------------------------------------------------------
 ## brackets
 

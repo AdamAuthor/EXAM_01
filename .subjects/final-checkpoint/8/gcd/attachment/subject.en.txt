@@ -1,6 +1,6 @@
-Assignment name  : gcd
-Expected files   : main.go
-Allowed imports  : ["fmt.*", "os.Args", "strconv.Atoi", "--allow-builtin"]
+# Assignment name  : gcd
+# Expected files   : /piscine/gcd/main.go
+# Allowed imports  : ["fmt.*", "os.Args", "strconv.Atoi", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## gcd
 
