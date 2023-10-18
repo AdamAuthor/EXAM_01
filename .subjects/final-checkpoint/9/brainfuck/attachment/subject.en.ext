@@ -8,6 +8,7 @@ Allowed imports  : github.com/01-edu/z01.PrintRune, os.*
 
 ### Instructions
 
+# create folder '/brainfuck' in 'piscine' folder and put your main.go
 Write a `Brainfuck` interpreter program.
 
 The source code will be given as the first parameter, and will always be valid with fewer than 4096 operations.
@@ -37,5 +38,3 @@ abc$
 $ go run .
 $
 ```
-
-# create folder '/brainfuck' in 'piscine' folder and put your main.go

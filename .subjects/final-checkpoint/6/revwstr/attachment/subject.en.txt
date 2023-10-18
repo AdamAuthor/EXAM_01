@@ -6,6 +6,7 @@ Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-built
 
 ### Instructions
 
+# create folder '/revwstr' in 'piscine' folder and put your main.go
 Write a program that takes a `string` as a parameter, and prints its words in reverse, followed by a newline.
 
 - A word is a sequence of **alphanumerical** characters.
@@ -27,5 +28,3 @@ $ go run . "" | cat-e
 $
 $
 ```
-
-# create folder '/revwstr' in 'piscine' folder and put your main.go

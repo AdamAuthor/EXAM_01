@@ -6,6 +6,7 @@ Allowed imports  :
 
 ### Instructions
 
+# put itoabase.go to 'piscine' folder
 Write a function that:
 
 - converts an `int` value to a `string` using the specified base in the argument
@@ -28,5 +29,3 @@ func ItoaBase(value, base int) string {
 
 }
 ```
-
-# put itoabase.go to 'piscine' folder

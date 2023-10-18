@@ -6,6 +6,7 @@ Allowed imports  : ["fmt.*", "os.Args", "strconv.Atoi", "--allow-builtin"]
 
 ### Instructions
 
+# create folder '/gcd' in 'piscine' folder and put your main.go
 Write a program that takes two `string` representing two strictly positive integers that fit in an `int`.
 
 The program displays their greatest common divisor followed by a newline (`'\n'`).
@@ -29,5 +30,3 @@ $ go run .
 $ go run . 50 12 4
 $
 ```
-
-# create folder '/gcd' in 'piscine' folder and put your main.go

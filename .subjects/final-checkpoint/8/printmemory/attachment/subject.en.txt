@@ -6,6 +6,7 @@ Allowed imports  : "github.com/01-edu/z01.PrintRune","unicode.IsGraphic"
 
 ### Instructions
 
+# put printmemory.go to 'piscine' folder
 Write a function that takes `(arr [10]byte)`, and displays the memory as in the example.
 
 After displaying the memory the function must display all the ASCII graphic characters. The non printable characters must be replaced by a dot.
@@ -42,5 +43,3 @@ $ go run . | cat -e
 hello..*..$
 $
 ```
-
-# put printmemory.go to 'piscine' folder

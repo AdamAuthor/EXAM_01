@@ -6,6 +6,7 @@ Allowed imports  : "strconv.Atoi", "os.*","fmt.*",strings.Split
 
 ### Instructions
 
+# create folder '/brackets' in 'piscine' folder and put your main.go
 Write a program that takes an undefined number of `string` in arguments. For each argument, if the expression is correctly bracketed, the program prints on the standard output `OK` followed by a newline (`'\n'`), otherwise it prints `Error` followed by a newline.
 
 Symbols considered as brackets are parentheses `(` and `)`, square brackets `[` and `]` and curly braces `{` and `}`. Every other symbols are simply ignored.
@@ -27,5 +28,3 @@ OK$
 $ go run .
 $
 ```
-
-# create folder '/brackets' in 'piscine' folder and put your main.go

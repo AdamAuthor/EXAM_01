@@ -6,6 +6,7 @@ Allowed imports  : ["strconv.Atoi", "os.*", "fmt.*", "strings.Split", "--allow-b
 
 ### Instructions
 
+# create folder '/rpncalc' in 'piscine' folder and put your main.go
 Write a program that takes a `string` which contains an equation written in
 `Reverse Polish Notation` (RPN) as its first argument, that evaluates the equation, and that
 prints the result on the standard output followed by a newline (`'\n'`).
@@ -63,5 +64,3 @@ $ go run . "     1      3 * ksd 2 -" | cat -e
 Error$
 $
 ```
-
-# create folder '/rpncalc' in 'piscine' folder and put your main.go

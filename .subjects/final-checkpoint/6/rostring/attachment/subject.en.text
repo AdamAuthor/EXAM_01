@@ -6,6 +6,7 @@ Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-built
 
 ### Instructions
 
+# create folder '/rostring' in 'piscine' folder and put your main.go
 Write a program that takes a `string` and displays this `string` after rotating it
 one word to the left.
 
@@ -30,4 +31,3 @@ $ go run . | cat -e
 $
 $
 ```
-# create folder '/rostring' in 'piscine' folder and put your main.go

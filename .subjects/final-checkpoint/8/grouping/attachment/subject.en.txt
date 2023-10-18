@@ -6,6 +6,7 @@ Allowed imports  : ["fmt.Printf", "os.Args", "--allow-builtin"]
 
 ### Instructions
 
+# create folder '/groupings' in 'piscine' folder and put your main.go
 Write a program that receives two strings and replicates the use of brackets in regular expressions. Brackets in regular expressions returns the words that contain the expression inside of it.
 
 The program should handle the "`|`" operator, which searches for both strings on each side of the operator.
@@ -38,5 +39,3 @@ $ go run . "(s)" ""
 $ go run . "i" "Something in the air"
 $
 ```
-
-# create folder '/groupings' in 'piscine' folder and put your main.go

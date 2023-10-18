@@ -6,6 +6,7 @@ Allowed imports  :
 
 ### Instructions
 
+# put listremoveif.go to 'piscine' folder
 Write a function `ListRemoveIf` that removes all elements that are equal to the `data_ref` in the argument of the function.
 
 ### Expected function and structure
@@ -104,5 +105,3 @@ $ go run .
 Hello -> There -> How -> are -> you -> <nil>
 $
 ```
-
-# put listremoveif.go to 'piscine' folder

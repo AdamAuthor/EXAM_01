@@ -6,6 +6,7 @@ Allowed imports  : ["strconv.Atoi", "os.Args", "fmt.*", "--allow-builtin"]
 
 ### Instructions
 
+# create folder '/fprime' in 'piscine' folder and put your main.go
 Write a program that takes a positive `int` and displays its prime factors, followed by a newline (`'\n'`).
 
 - Factors must be displayed in ascending order and separated by `*`.
@@ -30,5 +31,3 @@ $ go run . 0
 $ go run . 1
 $
 ```
-
-# create folder '/fprime' in 'piscine' folder and put your main.go

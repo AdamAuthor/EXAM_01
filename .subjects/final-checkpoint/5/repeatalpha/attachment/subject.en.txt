@@ -6,6 +6,7 @@ Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "--allow-builtin"
 
 ### Instructions
 
+# create folder '/repeatalpha' in 'piscine' folder and put your main.go
 Write a program called `repeat_alpha` that takes a `string` and displays it repeating each alphabetical character as many times as its alphabetical index.
 
 The result must be followed by a newline (`'\n'`).
@@ -28,5 +29,3 @@ $ go run . "" | cat -e
 $
 $
 ```
-
-# create folder '/repeatalpha' in 'piscine' folder and put your main.go

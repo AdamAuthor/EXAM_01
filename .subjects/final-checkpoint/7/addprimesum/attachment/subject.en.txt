@@ -6,6 +6,7 @@ Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.*"
 
 ### Instructions
 
+# create folder '/addprimesum' in 'piscine' folder and put your main.go
 Write a program that takes a positive integer as argument and displays the sum of all prime numbers inferior or equal to it followed by a newline (`'\n'`).
 
 - If the number of arguments is different from 1, or if the argument is not a positive number, the program displays `0` followed by a newline.
@@ -27,5 +28,3 @@ $ go run . 5 7
 0
 $
 ```
-
-# create folder '/addprimesum' in 'piscine' folder and put your main.go

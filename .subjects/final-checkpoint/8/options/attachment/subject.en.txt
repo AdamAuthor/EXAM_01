@@ -6,6 +6,7 @@ Allowed imports  : os.* fmt.*
 
 ## Instructions
 
+# create folder '/options' in 'piscine' folder and put your main.go
 Write a program that takes an undefined number of arguments which could be considered as `options` and writes on the standard output a representation of those `options` as groups of `bytes` followed by a newline (`'\n'`).
 
 - An `option` is an argument that begins with a `-` and that can have multiple characters which could be :
@@ -49,5 +50,3 @@ $ go run . - | cat -e
 Invalid Option$
 $
 ```
-
-# create folder '/options' in 'piscine' folder and put your main.go

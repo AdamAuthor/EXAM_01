@@ -6,6 +6,7 @@ Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-built
 
 ### Instructions
 
+# create folder '/hiddenp' in 'piscine' folder and put your main.go
 Write a program named `hiddenp` that takes two `string` and that, if the first `string` is hidden in the second one, displays `1` followed by a newline (`'\n'`), otherwise it displays `0` followed by a newline.
 
 Let s1 and s2 be `string`. It is considered that s1 is hidden in s2 if it is possible to find each character from s1 in s2, **in the same order as they appear in s1.**
@@ -28,4 +29,3 @@ $ go run . "DD" "DABC" | cat -e
 $ go run .
 $
 ```
-# create folder '/hiddenp' in 'piscine' folder and put your main.go

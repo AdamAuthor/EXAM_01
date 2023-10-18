@@ -6,6 +6,7 @@ Allowed imports  : ["github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 
 ### Instructions
 
+# put atoibase.go to 'piscine' folder
 Write a function that takes two arguments:
 
 - `s`: a numeric `string` in a given [base](<https://simple.wikipedia.org/wiki/Base_(mathematics)>).
@@ -64,5 +65,3 @@ $ go run .
 0
 $
 ```
-
-# put atoibase.go to 'piscine' folder
