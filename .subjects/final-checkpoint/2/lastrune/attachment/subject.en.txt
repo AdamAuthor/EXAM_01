@@ -1,6 +1,6 @@
 # Assignment name  : lastrune
 # Expected files   : /piscine/lastrune.go
-Allowed imports  : --
+# Allowed imports  : --
 --------------------------------------------------------------------------------
 ## lastrune
 

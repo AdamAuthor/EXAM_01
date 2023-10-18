@@ -1,6 +1,6 @@
 # Assignment name  : alphamirror
 # Expected files   : /piscine/alphamirror/main.go
-Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.Args"
+# Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.Args"
 --------------------------------------------------------------------------------
 ## alphamirror
 

@@ -1,6 +1,6 @@
 # Assignment name  : romannumbers
 # Expected files   : /piscine/romannumbers/main.go
-Allowed imports  : ["os.Args", "fmt.Printf", "--allow-builtin"]
+# Allowed imports  : ["os.Args", "fmt.Printf", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## romannumbers
 

@@ -1,6 +1,6 @@
 # Assignment name  : tabmult
 # Expected files   : /piscine/tabmult/main.go
-Allowed imports  : "github.com/01-edu/z01.PrintRune" , "os.*" , "strconv.Atoi"
+# Allowed imports  : "github.com/01-edu/z01.PrintRune" , "os.*" , "strconv.Atoi"
 --------------------------------------------------------------------------------
 ## tabmult
 

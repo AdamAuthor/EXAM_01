@@ -1,6 +1,6 @@
 # Assignment name  : strlen
 # Expected files   : /piscine/strlen.go
-Allowed imports  : --
+# Allowed imports  : --
 --------------------------------------------------------------------------------
 ### Instructions
 

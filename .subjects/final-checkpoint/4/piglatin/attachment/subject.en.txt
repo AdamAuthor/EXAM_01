@@ -1,6 +1,6 @@
 # Assignment name  : piglatin
 # Expected files   : /piscine/piglatin/main.go
-Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-builtin"]
+# Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## piglatin
 

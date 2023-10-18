@@ -1,6 +1,6 @@
 # Assignment name  : reduceint
 # Expected files   : /piscine/reduceint.go
-Allowed imports  : "github.com/01-edu/z01.PrintRune", "strconv.Itoa"
+# Allowed imports  : "github.com/01-edu/z01.PrintRune", "strconv.Itoa"
 --------------------------------------------------------------------------------
 ## reduceint
 

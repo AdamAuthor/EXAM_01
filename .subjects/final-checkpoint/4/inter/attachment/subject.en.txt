@@ -1,6 +1,6 @@
 # Assignment name  : inter
 # Expected files   : /piscine/inter/main.go
-Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.Args", "--allow-builtin"]
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.Args", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## inter
 

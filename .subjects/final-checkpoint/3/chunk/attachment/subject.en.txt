@@ -1,6 +1,6 @@
 # Assignment name  : chunk
 # Expected files   : /piscine/chunk.go
-Allowed imports  : "fmt.Println"
+# Allowed imports  : "fmt.Println"
 --------------------------------------------------------------------------------
 ## chunk
 

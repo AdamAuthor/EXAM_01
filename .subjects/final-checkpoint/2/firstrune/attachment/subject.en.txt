@@ -1,6 +1,6 @@
 # Assignment name  : firstrune
 # Expected files   : piscine/firstrune.go
-Allowed imports  : --
+# Allowed imports  : --
 --------------------------------------------------------------------------------
 ## firstrune
 

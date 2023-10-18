@@ -1,6 +1,6 @@
 # Assignment name  : rot13
 # Expected files   : /piscine/rot13/main.go
-Allowed imports  : --
+# Allowed imports  : --
 --------------------------------------------------------------------------------
 ## rot13
 
