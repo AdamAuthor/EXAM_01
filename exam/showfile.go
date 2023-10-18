@@ -94,7 +94,6 @@ func (c *Checkpoint) InitTask() int {
 		model.Clear()
 		os.Exit(0)
 	}
-	fmt.Println(c)
 	var content, typeCheckpoint string
 	content, c.Task, typeCheckpoint = OpenFile(c.IdxCheck, c.Level, c.Task)
 	bModel, err := createGlamour(content)
