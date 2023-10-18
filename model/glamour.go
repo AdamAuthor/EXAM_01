@@ -10,6 +10,7 @@ package model
 import (
 	"fmt"
 	"os"
+	"os/exec"
 
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
@@ -21,12 +22,12 @@ const content = `
 # Disclaimer
 ## Made by: adamauthor, aibekabdi, alnshine, hhaakkimm
 
-Use GrademeEXAM responsibly for practice purposes.
-Success comes from understanding the code, there are no shortcuts.
-This tools has been created to help you review your errors and better understand your code issues.
-Be aware that the content of GrademeEXAM may not match the ExamShell of 42, the corrections from the Moulinette can differ significantly, and exam topics can change at any time.
-You are responsible for your exam preparation and results.
-by pressing "Enter" and using Grademe, you accept these terms.
+This tool is designed to help you prepare for the 01 exams, by analyzing and helping you understand errors in your code. 
+It was created to provide additional resources and training facilities, and does not guarantee the successful completion of exams or the achievement of specific results.
+When using this tool, you are fully and exclusively responsible for your exam preparation, decisions made, approaches to study and final exam results. 
+Our team is not responsible for the success or failure of the exam, possible mistakes made in the preparation process, or for any result obtained by using this tool.
+
+By pressing "Enter" and starting using our 01_exam tool, you confirm your understanding and unconditional acceptance of these terms.
 `
 
 var access = false
@@ -75,6 +76,7 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c", "esc":
+			exec.Command("reset")
 			return e, tea.Quit
 		case "enter":
 			access = true

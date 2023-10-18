@@ -11,6 +11,7 @@ import (
 	"academie/model"
 	"fmt"
 	"os"
+	"os/exec"
 
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
@@ -74,6 +75,7 @@ func (e example) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c", "esc":
+			exec.Command("reset")
 			return e, tea.Quit
 		case "enter":
 			return e, tea.Quit
