@@ -8,6 +8,7 @@
 package exam
 
 import (
+	"academie/model/spinner"
 	"fmt"
 	"os/exec"
 	"path/filepath"
@@ -20,7 +21,10 @@ func RunTester(exercise string, level int, typeCheckpoint string) (int, string) 
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
 	pathToTester := filepath.Join(rootDir, ".subjects", typeCheckpoint, strconv.Itoa(level), exercise, "main.go")
-	ex := exec.Command("go", "run", pathToTester)
+	var ex *exec.Cmd
+	ex = exec.Command("go", "run", pathToTester)
+	spinner.Spinner()
+	
 	out, err := ex.Output()
 	if err != nil || len(out) != 0 {
 		exitErr, ok := err.(*exec.ExitError)
