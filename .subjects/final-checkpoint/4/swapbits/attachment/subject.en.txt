@@ -7,6 +7,7 @@ Allowed imports  : ["--allow-builtin"]
 
 ### Instructions
 
+# put swapbits.go to 'piscine' folder
 Write a function that takes a `byte`, swaps its halfs (like the example) and returns the result.
 
 ### Expected function
@@ -29,5 +30,3 @@ Example:
     / \
 0001 | 0100
 ```
-
-# put swapbits.go to 'piscine' folder

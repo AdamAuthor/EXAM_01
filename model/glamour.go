@@ -21,11 +21,12 @@ import (
 const content = `
 # Disclaimer
 ## Made by: adamauthor, aibekabdi, alnshine, hhaakkimm
+$$ If you want to support the project and the poor developers of this project, below is the KaspI number:
+# Kaspi: +7(778)774-29-01
 
 This tool is designed to help you prepare for the 01 exams, by analyzing and helping you understand errors in your code. 
 It was created to provide additional resources and training facilities, and does not guarantee the successful completion of exams or the achievement of specific results.
 When using this tool, you are fully and exclusively responsible for your exam preparation, decisions made, approaches to study and final exam results. 
-Our team is not responsible for the success or failure of the exam, possible mistakes made in the preparation process, or for any result obtained by using this tool.
 
 By pressing "Enter" and starting using our 01_exam tool, you confirm your understanding and unconditional acceptance of these terms.
 `

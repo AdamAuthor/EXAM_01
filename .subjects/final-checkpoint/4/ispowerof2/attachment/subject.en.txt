@@ -6,6 +6,7 @@ Allowed imports  : ["github.com/01-edu/z01.PrintRune", "strconv.Atoi", "os.Args"
 
 ### Instructions
 
+# create folder '/ispowerof2' in 'piscine' folder and put your main.go
 Write a program that determines if a given number is a power of 2. A number `n` is a power of 2 if it meets the following condition: **n = 2 <sup>m</sup>** where m is another integer number.
 
 For example, **4 = 2 <sup>2</sup>** or **16 = 2 <sup>4</sup>** are power of 2 numbers while 24 is not.
@@ -29,5 +30,3 @@ $ go run .
 $ go run . 64 1024
 $
 ```
-
-# create folder '/ispowerof2' in 'piscine' folder and put your main.go

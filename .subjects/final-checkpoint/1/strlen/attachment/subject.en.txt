@@ -4,6 +4,7 @@ Allowed imports  : --
 --------------------------------------------------------------------------------
 ### Instructions
 
+# put strlen.go to 'piscine' folder
 - Write a function that counts the `runes` of a `string` and that returns that count.
 
 ### Expected function
@@ -36,5 +37,3 @@ $ go run .
 12
 $
 ```
-
-# put strlen.go to 'piscine' folder

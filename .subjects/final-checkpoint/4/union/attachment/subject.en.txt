@@ -6,6 +6,7 @@ Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-built
 
 ### Instructions
 
+# create folder '/union' in 'piscine' folder and put your main.go
 Write a program that takes two `string` and displays, without doubles, the characters that appear in either one of the `string`.
 
 The display will be in the same order that the characters appear on the command line and will be followed by a newline (`'\n'`).
@@ -29,5 +30,3 @@ $
 $ go run . rien | cat -e
 $
 ```
-
-# create folder '/union' in 'piscine' folder and put your main.go

@@ -6,6 +6,7 @@ Allowed imports  : "github.com/01-edu/z01.PrintRune", "strconv.Itoa"
 
 ### Instructions
 
+# put reduceint.go to 'piscine' folder
 The function should have as parameters a slice of integers `a []int` and a function `f func(int, int) int`.  For each element of the slice, it should apply the function `f func(int, int) int`, save the result and then print it.
 
 ### Expected function
@@ -50,5 +51,3 @@ $ go run .
 250
 $
 ```
-
-# put reduceint.go to 'piscine' folder

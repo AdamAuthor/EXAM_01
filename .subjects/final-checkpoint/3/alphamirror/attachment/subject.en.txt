@@ -6,6 +6,7 @@ Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.Args"
 
 ### Instructions
 
+# create folder '/alphamirror' in 'piscine' folder and put your main.go
 Write a program called `alphamirror` that takes a `string` as argument and displays this `string` after replacing each alphabetical character with the opposite alphabetical character.
 
 The case of the letter remains unchanged, for example :
@@ -29,5 +30,3 @@ $
 $ go run .
 $
 ```
-
-# create folder '/alphamirror' in 'piscine' folder and put your main.go

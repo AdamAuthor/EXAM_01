@@ -6,6 +6,7 @@ Allowed imports  : ["os.Args", "github.com/01-edu/z01.PrintRune", "--allow-built
 
 ### Instructions
 
+# create folder '/piglatin' in 'piscine' folder and put your main.go
 Write a **program** that transforms a string passed as argument in its `Pig Latin` version.
 
 The rules used by Pig Latin are as follows:
@@ -33,5 +34,3 @@ No vowels$
 $ go run . something else | cat -e
 $
 ```
-
-# create folder '/piglatin' in 'piscine' folder and put your main.go

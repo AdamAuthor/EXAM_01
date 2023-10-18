@@ -6,6 +6,7 @@ Allowed imports  : --
 
 ### Instructions
 
+# create folder '/rot13' in 'piscine' folder and put your main.go
 Write a program that takes a `string` and displays it, replacing each of its
 letters by the letter 13 spots ahead in alphabetical order.
 
@@ -27,5 +28,3 @@ URYYB, URYC
 $ go run .
 $
 ```
-
-# create folder '/rot13' in 'piscine' folder and put your main.go

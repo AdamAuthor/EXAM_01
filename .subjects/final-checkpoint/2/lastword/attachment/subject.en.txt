@@ -6,6 +6,7 @@ Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.Args"
 
 ### Instructions
 
+# create folder '/lastword' in 'piscine' folder and put your main.go
 Write a program that takes a `string` and displays its last word, followed by a newline (`'\n'`).
 
 - A word is a section of `string` delimited by spaces or by the start/end of the `string`.
@@ -27,5 +28,3 @@ $ go run . "  lorem,ipsum  " | cat -e
 lorem,ipsum$
 $
 ```
-
-# create folder '/lastword' in 'piscine' folder and put your main.go

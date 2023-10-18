@@ -4,6 +4,7 @@ Allowed imports  : github.com/01-edu/z01.PrintRune
 --------------------------------------------------------------------------------
 ### Instructions
 
+# create folder '/countdown' in 'piscine' folder and put your main.go
 - Write a function that counts the `runes` of a `string` and that returns that count.
 
 ### Expected function
@@ -22,4 +23,3 @@ $ go run .
 $
 ```
 
-# create folder '/countdown' in 'piscine' folder and put your main.go

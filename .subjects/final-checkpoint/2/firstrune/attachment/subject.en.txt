@@ -6,6 +6,7 @@ Allowed imports  : --
 
 ### Instructions
 
+### put firstrune.go to 'piscine' folder
 Write a function that returns the first `rune` of a `string`.
 
 ### Expected function
@@ -42,5 +43,3 @@ $ go run .
 HSO
 $
 ```
-
-# put firstrune.go to 'piscine' folder
