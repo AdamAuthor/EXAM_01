@@ -21,10 +21,12 @@ func RunTester(exercise string, level int, typeCheckpoint string) (int, string) 
 	currentDir := filepath.Dir(filename)
 	rootDir := filepath.Dir(currentDir)
 	pathToTester := filepath.Join(rootDir, ".subjects", typeCheckpoint, strconv.Itoa(level), exercise, "main.go")
-	var ex *exec.Cmd
-	ex = exec.Command("go", "run", pathToTester)
-	spinner.Spinner()
-	
+	stopCh := make(chan bool)
+	go func() {
+		spinner.Spinner(stopCh) // Ваша функция Spinner
+	}()
+	ex := exec.Command("go", "run", pathToTester)
+	stopCh <- true
 	out, err := ex.Output()
 	if err != nil || len(out) != 0 {
 		exitErr, ok := err.(*exec.ExitError)
