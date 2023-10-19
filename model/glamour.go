@@ -21,6 +21,7 @@ import (
 const content = `
 # Disclaimer
 ## Made by: adamauthor, aibekabdi, alnshine, hhaakkimm
+## Special thanks: gshaken
 $$ If you want to support the project and the poor developers of this project, below is the KaspI number:
 # Kaspi: +7(778)774-29-01
 
