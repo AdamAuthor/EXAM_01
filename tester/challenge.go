@@ -8,6 +8,7 @@
 package tester
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"os/exec"
@@ -30,7 +31,7 @@ func Program(rootSolutions, exercise string, args ...string) {
 	solutionsOut, err1 := GetSolution(rootSolutions, exercise, args...)
 	if err != nil {
 		Fatalln("Your program fails (non-zero exit status) when it should not :\n" +
-			console(piscineOut) +
+			console(err.Error()) +
 			"\n\nExpected :\n" +
 			console(solutionsOut))
 	}
@@ -52,11 +53,15 @@ func GetPiscineAnswer(exercise string, args ...string) (string, error) {
 	pathToPiscineMain := filepath.Join(rootDir, "piscine", exercise, "main.go")
 	cmdArgs := append([]string{"run", pathToPiscineMain}, args...)
 	ex := exec.Command("go", cmdArgs...)
-	piscineOut, err := ex.Output()
+	out, err := ex.Output()
 	if err != nil {
+		exitErr, ok := err.(*exec.ExitError)
+		if ok {
+			return "", errors.New(string(exitErr.Stderr))
+		}
 		return "", err
 	}
-	return string(piscineOut), nil
+	return string(out), nil
 }
 
 func GetSolution(rootSolutions, exercise string, args ...string) (string, error) {
@@ -66,11 +71,11 @@ func GetSolution(rootSolutions, exercise string, args ...string) (string, error)
 	pathToPiscineMain := filepath.Join(rootDir, rootSolutions, "main.go")
 	cmdArgs := append([]string{"run", pathToPiscineMain}, args...)
 	ex := exec.Command("go", cmdArgs...)
-	piscineOut, err := ex.Output()
+	out, err := ex.Output()
 	if err != nil {
 		return "", err
 	}
-	return string(piscineOut), nil
+	return string(out), nil
 }
 func Fatalln(a ...interface{}) {
 	_, _ = fmt.Fprintln(os.Stderr, a...)
