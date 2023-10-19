@@ -1,5 +1,5 @@
 # Assignment name  : foldint
-# Expected files   : /piscine/findprevprime.go
+# Expected files   : /piscine/foldint.go
 # Allowed imports  : ["github.com/01-edu/z01.PrintRune", "--allow-builtin"]
 --------------------------------------------------------------------------------
 ## foldint
