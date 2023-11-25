@@ -1,0 +1,11 @@
+# Assignment name  : onlya
+# Expected files   : /onlya/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+## onlya
+
+### Instructions
+
+# create folder '/onlya' in 'piscine' folder and put your main.go
+
+Write a program that displays a `a` character on the standard output. (and nothing else)

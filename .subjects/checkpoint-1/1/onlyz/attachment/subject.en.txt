@@ -1,0 +1,11 @@
+# Assignment name  : onlyz
+# Expected files   : /onlyz/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+## onlyz
+
+### Instructions
+
+# create folder '/onlyz' in 'piscine' folder and put your main.go
+
+Write a program that displays a `a` character on the standard output. (and nothing else)
