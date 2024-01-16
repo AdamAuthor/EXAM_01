@@ -1,0 +1,15 @@
+# Assignment name  : displayalrevm
+# Expected files   : /displayalrevm/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+## displayalrevm
+
+### Instructions
+
+# create folder '/displayalrevm' in 'piscine' folder and put your main.go
+Write a program that displays the alphabet in reverse, with even letters in uppercase, and odd letters in lowercase, followed by a newline ('\n').
+
+Usage
+$ go run . | cat -e
+zYxWvUtSrQpOnMlKjIhGfEdCbA$
+$

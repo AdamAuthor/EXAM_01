@@ -1,0 +1,18 @@
+# Assignment name  : countdown
+# Expected files   : /countdown/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+### Instructions
+
+# create folder '/countdown' in 'piscine' folder and put your main.go
+
+Write a program that displays all digits in descending order, followed by a newline (`'\n'`).
+
+### Usage
+
+```console
+$ go run .
+9876543210
+$
+```
+

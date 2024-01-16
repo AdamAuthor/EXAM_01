@@ -1,0 +1,21 @@
+# Assignment name  : printalphabet
+# Expected files   : /printalphabet/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+## printalphabet
+
+### Instructions
+
+# create folder '/printalphabet' in 'piscine' folder and put your main.go
+
+Write a program that prints the Latin alphabet in lowercase on a single line.
+
+A line is a sequence of characters preceding the end of line character ('\n').
+
+Usage
+$ go run .
+abcdefghijklmnopqrstuvwxyz
+$
+
+
+
