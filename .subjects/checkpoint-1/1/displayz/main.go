@@ -16,7 +16,7 @@ func main() {
 		"1",
 	)
 	for _, s := range table {
-		tester.Program(".subjects/checkpoint-1/1/displaya/solutions", "displaya", strings.Fields(s)...)
+		tester.Program(".subjects/checkpoint-1/1/displayz/solutions", "displayz", strings.Fields(s)...)
 	}
-	tester.Program(".subjects/checkpoint-1/1/displaya/solutions", "displaya", "1", "z")
+	tester.Program(".subjects/checkpoint-1/1/displayz/solutions", "displayz", "1", "z")
 }
