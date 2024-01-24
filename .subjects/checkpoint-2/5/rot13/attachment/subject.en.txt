@@ -1,0 +1,30 @@
+# Assignment name  : rot13
+# Expected files   : /piscine/rot13/main.go
+# Allowed imports  : "github.com/01-edu/z01.PrintRune", "os.*"
+--------------------------------------------------------------------------------
+## rot13
+
+### Instructions
+
+# create folder '/rot13' in 'piscine' folder and put your main.go
+Write a program that takes a `string` and displays it, replacing each of its
+letters by the letter 13 spots ahead in alphabetical order.
+
+- 'z' becomes 'm' and 'Z' becomes 'M'. The case of the letter stays the same.
+
+- The output will be followed by a newline (`'\n'`).
+
+- If the number of arguments is different from 1, the program displays nothing.
+
+### Usage
+
+```console
+$ go run . "abc"
+nop
+$ go run . "hello there"
+uryyb gurer
+$ go run . "HELLO, HELP"
+URYYB, URYC
+$ go run .
+$
+```

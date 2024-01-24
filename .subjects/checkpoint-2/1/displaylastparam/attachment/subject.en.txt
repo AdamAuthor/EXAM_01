@@ -1,0 +1,23 @@
+# Assignment name  : displaylastparam
+# Expected files   : /displaylastparam/main.go
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "--allow-builtin"]
+--------------------------------------------------------------------------------
+
+## displaylastparam
+### Instructions
+# create folder '/displaylastparam' in 'piscine' folder and put your main.go
+
+Write a program that displays its last argument, if there is one.
+
+### Usage
+
+```console
+$ go run . hello there
+there
+$ go run . "hello there" how are you
+you
+$ go run . "hello there"
+hello there
+$ go run .
+$
+```

@@ -1,0 +1,20 @@
+# Assignment name  : displayfirstparam
+# Expected files   : /displayfirstparam/main.go
+# Allowed imports  : ["github.com/01-edu/z01.PrintRune", "os.*", "--allow-builtin"]
+--------------------------------------------------------------------------------
+## displayfirstparam
+### Instructions
+# create folder '/displayfirstparam' in 'piscine' folder and put your main.go
+
+Write a program that displays its first argument, if there is one.
+
+### Usage
+
+```console
+$ go run . hello there
+hello
+$ go run . "hello there" how are you
+hello there
+$ go run .
+$
+```

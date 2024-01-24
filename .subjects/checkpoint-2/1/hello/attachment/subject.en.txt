@@ -1,0 +1,15 @@
+# Assignment name  : hello
+# Expected files   : /hello/main.go
+# Allowed imports  : github.com/01-edu/z01.PrintRune
+--------------------------------------------------------------------------------
+## hello
+### Instructions
+
+# create folder '/hello' in 'piscine' folder and put your main.go
+
+Write a program that displays "Hello World!" followed by a newline ('\n').
+
+Usage
+$ go run .
+Hello World!
+$
