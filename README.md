@@ -1,25 +1,22 @@
 # Exam_01_Pratice v1.0 🎓
- ## All 01 exams auto-correct, to practice.
- #### Disclaimer: This project is not made by Academie01, it's not identical to the proposed checkpoints and does not reflect your checkpoints at academie
+ ## Auto-Corrected Practice Exams
+ #### Disclaimer: This project is a practice tool for your Exam 01 preparations. It is not affiliated with Academie01, and while it offers valuable practice, it may differ from the actual exam checkpoints.
 
  ## Description
- This project is for practice for your checkpoints
+Exam_01_Practice is a tool designed to assist you in preparing for your Exam 01 checkpoints. It provides auto-correction functionality to help you understand and rectify errors in your code, enhancing your preparation process.
 
- ## Disclaimer from the [adamauthor](https://github.com/AdamAuthor), [aibekabdi](https://github.com/Aibekabdi), [alnshine](https://github.com/alnshine), [Hakeem_ata](https://github.com/hhaakkimm) team of creators
+ ## Disclaimer from the Creators
 
- This tool is designed to help you prepare for the 01 exams, by analyzing and helping you understand errors in your code. 
- It was created to provide additional resources and training facilities, and does not guarantee the successful completion of exams or the achievement of specific results.
- When using this tool, you are fully and exclusively responsible for your exam preparation, decisions made, approaches to study and final exam results. 
- Our team is not responsible for the success or failure of the exam, possible mistakes made in the preparation process, or for any result obtained by using this tool.
+This tool, created by  [AdamAuthor](https://github.com/AdamAuthor), [Aibekabdi](https://github.com/Aibekabdi), [alnshine](https://github.com/alnshine) and [Hakeem_ata](https://github.com/hhaakkimm), serves as an additional resource for your exam preparation. However, it does not guarantee exam success or specific results. Your exam outcomes depend on your efforts, decisions, and study approaches. The creators disclaim any responsibility for exam results, study mistakes, or outcomes resulting from tool usage.
 
  ## Installation
- Clone repository from github and run "make" command:
- git clone https://github.com/AdamAuthor/EXAM_01.git
+ To install Exam_01_Practice, simply clone the repository from GitHub and execute the following commands:
+ 
+```bash
+git clone https://github.com/AdamAuthor/EXAM_01.git
+cd EXAM_01
+make
+```
 
- ## Usage
- ```
- $cd EXAM_01
- $make
-
- ```
-
+## Usage
+Once installed, navigate to the EXAM_01 directory and execute the make command to run the auto-correction tool. This tool will help you analyze your code errors and refine your understanding of the exam topics.
