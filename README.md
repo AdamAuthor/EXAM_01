@@ -3,7 +3,7 @@
  #### Disclaimer: This project is a practice tool for your Exam 01 preparations. It is not affiliated with Academie01, and while it offers valuable practice, it may differ from the actual exam checkpoints.
 
  ## Description
-Exam_01_Practice is a tool designed to assist you in preparing for your Exam 01 checkpoints. It provides auto-correction functionality to help you understand and rectify errors in your code, enhancing your preparation process.
+EXAM_01 is a tool designed to assist you in preparing for your Exam 01 checkpoints. It provides auto-correction functionality to help you understand and rectify errors in your code, enhancing your preparation process.
 
  ## Disclaimer from the Creators
 
